@@ -1,0 +1,268 @@
+{
+  "meta": {
+    "descripcion": "Tarjetas de repaso sobre los temas del complemento (lo que el curso no cubre). Derivadas de togaf_complemento.json; no son texto oficial.",
+    "generado": "2026-11-20"
+  },
+  "tarjetas": [
+    {
+      "id": "k01",
+      "tema": "estandar",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Los 6 documentos del Fundamental Content (ed. 10)",
+      "back": "Introduction and Core Concepts · Architecture Development Method · ADM Techniques · Applying the ADM · Architecture Content · Enterprise Architecture Capability and Governance."
+    },
+    {
+      "id": "k02",
+      "tema": "estandar",
+      "fiabilidad": "secundario",
+      "front": "¿Qué cambia en el ADM con la edición 10?",
+      "back": "Las fases no cambian. Se quitan las flechas del diagrama (énfasis en la iteración) y se amplía la guía de tailoring."
+    },
+    {
+      "id": "k03",
+      "tema": "fase-preliminar",
+      "fase": "preliminar",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Pregunta clave de la Fase Preliminar",
+      "back": "«¿Cómo se va a hacer arquitectura en esta organización?»"
+    },
+    {
+      "id": "k04",
+      "tema": "fase-preliminar",
+      "fase": "preliminar",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Salidas principales de la Fase Preliminar",
+      "back": "Organizational Model for EA, Tailored Architecture Framework, Initial Architecture Repository, Architecture Principles y Governance Framework."
+    },
+    {
+      "id": "k05",
+      "tema": "fase-REQ",
+      "fase": "REQ",
+      "fiabilidad": "oficial_indirecto",
+      "front": "¿La Gestión de Requisitos prioriza los requisitos?",
+      "back": "No. Gestiona el proceso; cada fase del ADM prioriza y resuelve los requisitos que le tocan."
+    },
+    {
+      "id": "k06",
+      "tema": "fase-REQ",
+      "fase": "REQ",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Salida típica de la Gestión de Requisitos ante un cambio",
+      "back": "El Requirements Impact Statement (y el Requirements Repository actualizado)."
+    },
+    {
+      "id": "k07",
+      "tema": "fase-A",
+      "fase": "A",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Salidas formales de la Fase A",
+      "back": "Statement of Architecture Work aprobado, Capability Assessment, Architecture Vision, Communications Plan y borrador del ADD. El Request for Architecture Work es una ENTRADA."
+    },
+    {
+      "id": "k08",
+      "tema": "content-framework",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Idea central del Content Framework",
+      "back": "El ADM dice qué hacer; el Content Framework dice cómo debe verse lo que se produce."
+    },
+    {
+      "id": "k09",
+      "tema": "content-framework",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Entregable vs. artefacto vs. building block",
+      "back": "Entregable: producto contractual aprobado formalmente. Artefacto: catálogo, matriz o diagrama que describe un aspecto. Building block: componente reutilizable."
+    },
+    {
+      "id": "k10",
+      "tema": "content-framework",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Los 3 tipos de artefacto",
+      "back": "Catálogos (listas), matrices (relaciones) y diagramas (imágenes)."
+    },
+    {
+      "id": "k11",
+      "tema": "content-framework",
+      "fiabilidad": "oficial_indirecto",
+      "front": "ABB vs. SBB",
+      "back": "ABB: capacidad requerida, neutral a la tecnología. SBB: producto o componente concreto que la implementa. Cadena: requisito → ABB → SBB → solución."
+    },
+    {
+      "id": "k12",
+      "tema": "content-framework",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Compañera del Architecture Definition Document",
+      "back": "La Architecture Requirements Specification (ARS)."
+    },
+    {
+      "id": "k13",
+      "tema": "content-framework",
+      "fase": "E",
+      "fiabilidad": "secundario",
+      "front": "Salidas de la Fase E según el estándar",
+      "back": "Architecture Roadmap v0.1, Implementation and Migration Plan v0.1, estrategia de implementación, arquitecturas de transición y cartas de proyecto."
+    },
+    {
+      "id": "k14",
+      "tema": "content-framework",
+      "fase": "G",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Salidas formales de la Fase G",
+      "back": "Architecture Contract y Compliance Assessments."
+    },
+    {
+      "id": "k15",
+      "tema": "continuum",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Niveles del Enterprise Continuum",
+      "back": "Foundation → Common Systems → Industry → Organization-Specific (de lo genérico a lo específico)."
+    },
+    {
+      "id": "k16",
+      "tema": "continuum",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Architecture Continuum vs. Solutions Continuum",
+      "back": "Architecture Continuum: activos de arquitectura reutilizables. Solutions Continuum: su implementación con SBB reutilizables."
+    },
+    {
+      "id": "k17",
+      "tema": "continuum",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Nivel del TRM y del III-RM",
+      "back": "TRM = Foundation Architecture. III-RM = Common Systems Architecture."
+    },
+    {
+      "id": "k18",
+      "tema": "continuum",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Enterprise Continuum vs. Architecture Repository",
+      "back": "El continuo es el esquema para clasificar; el repositorio es donde se guardan los activos."
+    },
+    {
+      "id": "k19",
+      "tema": "continuum",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Clases del Architecture Repository (9.x)",
+      "back": "Architecture Metamodel, Architecture Capability, Architecture Landscape, Standards Information Base, Reference Library y Governance Log."
+    },
+    {
+      "id": "k20",
+      "tema": "continuum",
+      "fiabilidad": "secundario",
+      "front": "Renombres del repositorio en la ed. 10",
+      "back": "Standards Information Base → Standards Library. Governance Log → Governance Repository (con Decision Log)."
+    },
+    {
+      "id": "k21",
+      "tema": "niveles",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Strategic, Segment y Capability Architecture",
+      "back": "Strategic: toda la empresa a largo plazo (ejecutivos). Segment: un área (programa/portafolio). Capability: cómo se soporta una unidad de capacidad."
+    },
+    {
+      "id": "k22",
+      "tema": "niveles",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Dimensiones del alcance de una arquitectura",
+      "back": "Amplitud, profundidad y horizonte temporal."
+    },
+    {
+      "id": "k23",
+      "tema": "tecnicas",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Plantilla de un principio de arquitectura",
+      "back": "Name, Statement, Rationale e Implications."
+    },
+    {
+      "id": "k24",
+      "tema": "tecnicas",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Cualidades de un buen conjunto de principios",
+      "back": "Understandable, Robust, Complete, Consistent y Stable."
+    },
+    {
+      "id": "k25",
+      "tema": "tecnicas",
+      "fiabilidad": "secundario",
+      "front": "Matriz poder/interés de stakeholders",
+      "back": "Bajo/bajo: monitorear. Bajo poder/alto interés: mantener informado. Alto poder/bajo interés: mantener satisfecho. Alto/alto: gestionar de cerca."
+    },
+    {
+      "id": "k26",
+      "tema": "tecnicas",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Matriz de análisis de brechas",
+      "back": "ABB de la base en filas y del objetivo en columnas, más fila «New» y columna «Eliminated». Lo que está en ambos es «Included»; New o Eliminated es una brecha."
+    },
+    {
+      "id": "k27",
+      "tema": "tecnicas",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Regla de los Business Scenarios",
+      "back": "El problema se expresa como QUÉ lograr, no CÓMO (evitar el empuje tecnológico)."
+    },
+    {
+      "id": "k28",
+      "tema": "tecnicas",
+      "fase": "A",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Business Transformation Readiness Assessment",
+      "back": "Se hace en la Fase A para evaluar y cuantificar la preparación de la organización para el cambio."
+    },
+    {
+      "id": "k29",
+      "tema": "tecnicas",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Escalas de la gestión de riesgos",
+      "back": "Efecto: Catastrophic, Critical, Marginal, Negligible. Frecuencia: Frequent, Likely, Occasional, Seldom, Unlikely. Riesgo inicial vs. residual."
+    },
+    {
+      "id": "k30",
+      "tema": "tecnicas",
+      "fiabilidad": "secundario",
+      "front": "Tipos de iteración dentro de un ciclo ADM",
+      "back": "Architecture Capability (Preliminar–A), Architecture Development (B–F), Transition Planning (E–F) y Architecture Governance (G–H)."
+    },
+    {
+      "id": "k31",
+      "tema": "gobernanza",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Niveles de conformidad (de menor a mayor)",
+      "back": "Irrelevant → Consistent → Compliant → Conformant → Fully conformant. Aparte: Non-conformant (implementa en contra de la especificación)."
+    },
+    {
+      "id": "k32",
+      "tema": "gobernanza",
+      "fiabilidad": "oficial_indirecto",
+      "front": "Compliant vs. Conformant",
+      "back": "Compliant: todo lo implementado está en la especificación (puede faltar algo). Conformant: todo lo especificado está implementado (puede haber extras)."
+    },
+    {
+      "id": "k33",
+      "tema": "gobernanza",
+      "fiabilidad": "oficial_indirecto",
+      "front": "¿Qué es un Architecture Contract?",
+      "back": "Acuerdo entre socios de desarrollo y patrocinadores sobre entregables, calidad y adecuación al propósito."
+    },
+    {
+      "id": "k34",
+      "tema": "archimate",
+      "fiabilidad": "secundario",
+      "front": "TOGAF vs. ArchiMate",
+      "back": "TOGAF es el método (ADM); ArchiMate es el lenguaje de modelado. Son estándares complementarios de The Open Group."
+    },
+    {
+      "id": "k35",
+      "tema": "certificacion",
+      "fiabilidad": "oficial_leido",
+      "front": "Formato del examen EA Part 1 (Foundation)",
+      "back": "40 preguntas de opción múltiple, 60 minutos, aprobación 60 % (24/40), libro cerrado."
+    },
+    {
+      "id": "k36",
+      "tema": "certificacion",
+      "fiabilidad": "oficial_leido",
+      "front": "Formato del examen EA Part 2 (Practitioner)",
+      "back": "8 escenarios, 90 minutos, puntuación 5/3/1/0, aprobación 24/40, libro abierto."
+    }
+  ]
+}

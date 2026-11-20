@@ -1,0 +1,1203 @@
+{
+  "meta": {
+    "descripcion": "Complemento con contenido TOGAF que NO está en las diapositivas del curso. Separado de togaf_data.json para conservar la procedencia.",
+    "generado": "2026-11-19",
+    "idioma": "es",
+    "advertencia": "El sitio oficial de la edición 10 y la Pocket Guide exigen login y no se pudieron leer. Contrastar con el estándar antes de un examen oficial.",
+    "niveles_fiabilidad": {
+      "oficial_leido": "Documento oficial leído completo (hoja de datos de exámenes).",
+      "oficial_indirecto": "Texto del estándar 9.x/10 citado vía buscador o espejos de 9.1.",
+      "secundario": "Guías de terceros (Visual Paradigm, Detecon, blogs).",
+      "no_contrastado": "Conocimiento previo no verificado en esta sesión."
+    }
+  },
+  "estructura_estandar": {
+    "edicion_10": {
+      "fecha": "2022-04-25",
+      "fundamental_content": [
+        "Introduction and Core Concepts",
+        "Architecture Development Method",
+        "ADM Techniques",
+        "Applying the ADM",
+        "Architecture Content",
+        "Enterprise Architecture Capability and Governance"
+      ],
+      "series_guides_ejemplos": [
+        "Applying the TOGAF ADM using Agile Sprints",
+        "Business Capabilities",
+        "Value Streams"
+      ],
+      "fiabilidad": "oficial_indirecto"
+    },
+    "equivalencia_9x_a_10": [
+      {
+        "v9": "ADM Guidelines & Techniques",
+        "v10": "ADM Techniques + Applying the ADM"
+      },
+      {
+        "v9": "Architecture Content Framework",
+        "v10": "Architecture Content"
+      },
+      {
+        "v9": "Architecture Capability Framework",
+        "v10": "Enterprise Architecture Capability and Governance"
+      }
+    ],
+    "historia": [
+      {
+        "version": "TOGAF 1.0",
+        "fecha": "1995",
+        "nota": "Basado en TAFIM (DoD EE. UU.)"
+      },
+      {
+        "version": "TOGAF 7 (Technical Edition)",
+        "fecha": "2001-12"
+      },
+      {
+        "version": "TOGAF 8 (Enterprise Edition)",
+        "fecha": "2002-12",
+        "nota": "8.1 en 2003-12; 8.1.1 en 2006-11"
+      },
+      {
+        "version": "TOGAF 9",
+        "fecha": "",
+        "nota": "Añade modelo de contenido formal, repositorio y Enterprise Continuum"
+      },
+      {
+        "version": "TOGAF 10",
+        "fecha": "2022-04-25"
+      }
+    ],
+    "novedades_10": [
+      "Las fases del ADM no cambian",
+      "Se quitan las flechas direccionales del diagrama ADM (énfasis en iteración)",
+      "Más guía de tailoring: ágil, seguridad, transformación digital",
+      "Nuevos conceptos: propósitos de Architecture Capability, estados de arquitectura (Candidate, Current, Transition, Target), trade-offs, abstracción",
+      "Standards Information Base pasa a Standards Library; Governance Log pasa a Governance Repository (con Decision Log)"
+    ],
+    "fiabilidad_novedades": "secundario"
+  },
+  "preliminar": {
+    "pregunta_clave": "¿Cómo se va a hacer arquitectura en esta organización?",
+    "objetivos": [
+      "Revisar el contexto organizacional para la arquitectura empresarial",
+      "Permitir que el patrocinador defina requisitos para el trabajo en las áreas afectadas",
+      "Definir marco y metodologías, normalmente adaptando el ADM genérico"
+    ],
+    "pasos": [
+      "Asignar roles y responsabilidades para gestionar y gobernar la capacidad de EA",
+      "Informar a los trabajos de arquitectura existentes sobre los requisitos de interesados",
+      "Adaptar (tailoring) el marco y planear herramientas y técnicas (ed. 10)"
+    ],
+    "entradas": [
+      "TOGAF y otros marcos",
+      "Estrategias y planes de negocio",
+      "Principios, metas y drivers de negocio",
+      "Marcos de gobierno y legales",
+      "Presupuesto",
+      "Acuerdos con socios",
+      "Estrategia de TI",
+      "Modelo organizacional y repositorio previos"
+    ],
+    "salidas": [
+      "Organizational Model for Enterprise Architecture",
+      "Tailored Architecture Framework",
+      "Initial Architecture Repository",
+      "Reformulación de principios/metas/drivers de negocio",
+      "Architecture Principles",
+      "Governance Framework",
+      "Request for Architecture Work (cuando procede)"
+    ],
+    "fiabilidad": "oficial_indirecto"
+  },
+  "gestion_requisitos": {
+    "aclaracion": "Esta fase no prioriza ni resuelve requisitos; eso lo hace cada fase del ADM.",
+    "objetivos": [
+      "Mantener el proceso operativo en todas las fases relevantes",
+      "Gestionar los requisitos de cualquier ciclo o fase",
+      "Asegurar que cada fase reciba los requisitos relevantes"
+    ],
+    "pasos": [
+      "Identificar y documentar requisitos (Business Scenarios u otra técnica)",
+      "Fijar la línea base de requisitos (prioridades, acuerdo de interesados, Requirements Repository)",
+      "Monitorear la línea base",
+      "Identificar cambios: quitar, añadir, modificar, reevaluar prioridades",
+      "Registrar prioridades de requisitos cambiados, resolver conflictos, generar Requirements Impact Statement",
+      "Evaluar impacto en fase actual y previas; decidir implementar o posponer a otro ciclo",
+      "Tratar los requisitos que llegan de la Fase H",
+      "Actualizar el repositorio de requisitos",
+      "Implementar el cambio en la fase actual y revisar el análisis de brechas de fases pasadas"
+    ],
+    "entradas": [
+      "Architecture Repository poblado",
+      "Organizational Model for EA",
+      "Tailored Architecture Framework",
+      "Statement of Architecture Work",
+      "Architecture Vision",
+      "Architecture Requirements Specification"
+    ],
+    "salidas": [
+      "Requirements Impact Statement/Assessment",
+      "Architecture Requirements Specification (si procede)",
+      "Requirements Repository actualizado"
+    ],
+    "nota_numeracion": "Entre fuentes los pasos se cuentan como 9 o 10.",
+    "fiabilidad": "oficial_indirecto"
+  },
+  "content_framework": {
+    "idea_central": "El ADM dice qué hacer; el Content Framework dice cómo debe verse lo que se produce.",
+    "categorias": [
+      {
+        "id": "entregable",
+        "nombre": "Entregable (Deliverable)",
+        "def": "Producto contractual, revisado y aprobado formalmente por los interesados.",
+        "ejemplos": [
+          "Architecture Definition Document",
+          "Architecture Requirements Specification",
+          "Statement of Architecture Work",
+          "Request for Architecture Work",
+          "Architecture Vision",
+          "Architecture Roadmap",
+          "Architecture Contract"
+        ]
+      },
+      {
+        "id": "artefacto",
+        "nombre": "Artefacto (Artifact)",
+        "def": "Descripción de un aspecto de la arquitectura: catálogo (listas), matriz (relaciones) o diagrama (imágenes).",
+        "ejemplos": [
+          "Application Portfolio Catalog",
+          "Application/Data Matrix",
+          "Application Communication Diagram"
+        ]
+      },
+      {
+        "id": "building_block",
+        "nombre": "Building Block",
+        "def": "Componente reutilizable de capacidad de negocio, TI o arquitectura.",
+        "ejemplos": [
+          "ABB: Servicio de gestión de clientes",
+          "SBB: Salesforce CRM"
+        ]
+      }
+    ],
+    "abb_vs_sbb": {
+      "ABB": "Architecture Building Block: capacidad requerida, neutral a la tecnología; orienta la especificación de los SBB.",
+      "SBB": "Solution Building Block: componente concreto/producto que implementa la capacidad.",
+      "cadena": "Requisito → ABB → SBB → solución implementada (el mapeo ABB→SBB suele hacerse en la Fase E)."
+    },
+    "metamodelo_contenido": "Define tipos de elementos (actores, servicios de negocio, entidades de datos, aplicaciones, tecnologías) y cómo se relacionan.",
+    "entregables_por_fase": [
+      {
+        "fase": "Preliminar",
+        "salidas": [
+          "Organizational Model",
+          "Tailored Framework",
+          "Initial Repository",
+          "Architecture Principles",
+          "Governance Framework"
+        ]
+      },
+      {
+        "fase": "A",
+        "salidas": [
+          "Statement of Architecture Work aprobado",
+          "Capability Assessment",
+          "Architecture Vision",
+          "Communications Plan",
+          "Borrador de Architecture Definition Document (si aplica)"
+        ],
+        "nota": "El Request for Architecture Work es una ENTRADA, no una salida."
+      },
+      {
+        "fase": "B/C/D",
+        "salidas": [
+          "Architecture Definition Document (borrador/actualizado)",
+          "Architecture Requirements Specification (borrador/actualizada)",
+          "Componentes de la Architecture Roadmap"
+        ]
+      },
+      {
+        "fase": "E",
+        "salidas": [
+          "Architecture Roadmap v0.1",
+          "Implementation and Migration Plan v0.1",
+          "Implementation and Migration Strategy",
+          "Arquitecturas de transición",
+          "Cartas de proyecto"
+        ]
+      },
+      {
+        "fase": "F",
+        "salidas": [
+          "Implementation and Migration Plan",
+          "ADD y ARS finalizados",
+          "Architecture Roadmap y Transition Architecture finalizadas",
+          "ABB reutilizables",
+          "Requests for Architecture Work",
+          "Architecture Contracts",
+          "Implementation Governance Model (condicional)",
+          "Change Requests"
+        ]
+      },
+      {
+        "fase": "G",
+        "salidas": [
+          "Architecture Contract",
+          "Compliance Assessments"
+        ]
+      },
+      {
+        "fase": "H",
+        "salidas": [
+          "Actualizaciones de arquitectura (mantenimiento)",
+          "Cambios al marco y principios",
+          "Nuevo Request for Architecture Work (cambios mayores)",
+          "Compliance Assessments / Statement of Architecture Work / Architecture Contract actualizados si hace falta"
+        ]
+      }
+    ],
+    "artefactos_por_fase": [
+      {
+        "fase": "A",
+        "catalogos": [],
+        "matrices": [],
+        "diagramas": [
+          "Value Chain"
+        ]
+      },
+      {
+        "fase": "B",
+        "catalogos": [
+          "Business Service/Function"
+        ],
+        "matrices": [
+          "Business Interaction"
+        ],
+        "diagramas": [
+          "Business Footprint",
+          "Business Service/Information",
+          "Business Process Flow"
+        ]
+      },
+      {
+        "fase": "C-datos",
+        "catalogos": [
+          "Data Entity/Data Component"
+        ],
+        "matrices": [
+          "Data Entity/Business Function",
+          "Application/Data"
+        ],
+        "diagramas": []
+      },
+      {
+        "fase": "C-aplicaciones",
+        "catalogos": [
+          "Application Portfolio",
+          "Interface"
+        ],
+        "matrices": [
+          "Application/Organization",
+          "Role/Application",
+          "Application/Function",
+          "Application Interaction"
+        ],
+        "diagramas": [
+          "Application Communication",
+          "Application and User Location",
+          "Application Use-Case"
+        ]
+      },
+      {
+        "fase": "D",
+        "catalogos": [
+          "Technology Portfolio",
+          "Technology Standards"
+        ],
+        "matrices": [
+          "System/Technology"
+        ],
+        "diagramas": [
+          "Environments and Locations",
+          "Platform Decomposition"
+        ]
+      },
+      {
+        "fase": "E",
+        "catalogos": [],
+        "matrices": [],
+        "diagramas": [
+          "Project Context",
+          "Benefits"
+        ]
+      },
+      {
+        "fase": "Requisitos",
+        "catalogos": [
+          "Requirements Catalog"
+        ],
+        "matrices": [],
+        "diagramas": []
+      }
+    ],
+    "conteo_9x": {
+      "catalogos": 14,
+      "matrices": 10,
+      "diagramas": 32,
+      "total": 56,
+      "fiabilidad": "secundario"
+    },
+    "puente_curso": "El laboratorio 18 (UML) corresponde a artefactos de C y D. Inferencia: caso de uso → Application Use-Case; actividades → process flow; despliegue → Environments and Locations / hardware y red; clases entidad → modelo de datos lógico.",
+    "fiabilidad": "oficial_indirecto"
+  },
+  "enterprise_continuum": {
+    "def": "Esquema para clasificar soluciones y arquitecturas, de las genéricas a las específicas de la organización, dentro y fuera del repositorio.",
+    "partes": [
+      {
+        "nombre": "Architecture Continuum",
+        "contenido": "Activos de arquitectura reutilizables: reglas, representaciones y relaciones de los sistemas de información."
+      },
+      {
+        "nombre": "Solutions Continuum",
+        "contenido": "Implementación mediante Solution Building Blocks (SBB) reutilizables."
+      }
+    ],
+    "niveles": [
+      "Foundation",
+      "Common Systems",
+      "Industry",
+      "Organization-Specific"
+    ],
+    "ejemplos_oficiales": [
+      {
+        "elemento": "TRM",
+        "nivel": "Foundation Architecture"
+      },
+      {
+        "elemento": "III-RM",
+        "nivel": "Common Systems Architecture"
+      }
+    ],
+    "ejemplos_soluciones_secundario": [
+      "SO y bases de datos (Foundation)",
+      "ERP/CRM (Common Systems)",
+      "Sistemas bancarios (Industry)",
+      "Aplicaciones a medida (Organization-Specific)"
+    ],
+    "relacion_repositorio": "El continuo es el esquema de clasificación; el repositorio es donde se guardan los activos.",
+    "fiabilidad": "oficial_indirecto"
+  },
+  "architecture_repository": {
+    "clases_9x": [
+      {
+        "nombre": "Architecture Metamodel",
+        "def": "Aplicación del marco adaptada a la organización: método y metamodelo de contenido.",
+        "fiabilidad": "no_contrastado"
+      },
+      {
+        "nombre": "Architecture Capability",
+        "def": "Parámetros, estructuras y procesos que soportan la gobernanza del repositorio.",
+        "fiabilidad": "oficial_indirecto"
+      },
+      {
+        "nombre": "Architecture Landscape",
+        "def": "Vista de activos de arquitectura en uso: arquitecturas actual, objetivo y de transición.",
+        "fiabilidad": "oficial_indirecto"
+      },
+      {
+        "nombre": "Standards Information Base (SIB)",
+        "def": "Estándares a los que las arquitecturas deben ajustarse.",
+        "fiabilidad": "oficial_indirecto"
+      },
+      {
+        "nombre": "Reference Library",
+        "def": "Material de referencia: arquitecturas y modelos de referencia, biblioteca de viewpoints.",
+        "fiabilidad": "oficial_indirecto"
+      },
+      {
+        "nombre": "Governance Log",
+        "def": "Información de gobernanza continua: evaluaciones de conformidad, checklists, portafolio de proyectos, evaluaciones de capacidad y madurez.",
+        "fiabilidad": "oficial_indirecto"
+      }
+    ],
+    "areas_10": [
+      "Architecture Capability",
+      "Architecture Landscape",
+      "Standards Library (antes SIB)",
+      "Reference Library",
+      "Governance Repository (antes Governance Log, con Decision Log)",
+      "Architecture Requirements Repository",
+      "Solutions Landscape"
+    ],
+    "fiabilidad_10": "secundario"
+  },
+  "niveles_arquitectura": {
+    "niveles": [
+      {
+        "nombre": "Strategic Architecture",
+        "muestra": "Resumen de largo plazo de toda la empresa",
+        "uso": "Dirección a nivel ejecutivo"
+      },
+      {
+        "nombre": "Segment Architecture",
+        "muestra": "Modelos operativos más detallados de un área de la empresa",
+        "uso": "Dirección y roadmaps a nivel programa/portafolio"
+      },
+      {
+        "nombre": "Capability Architecture",
+        "muestra": "Cómo la empresa soporta una unidad de capacidad",
+        "uso": "Roadmaps que realizan incrementos de capacidad"
+      }
+    ],
+    "dimensiones_alcance": [
+      "Amplitud",
+      "Profundidad",
+      "Horizonte temporal"
+    ],
+    "nota_horizontes": "3–5 años / anual / mensual son interpretaciones comunes de fuentes secundarias, no cifras de TOGAF.",
+    "coherencia": "Los niveles deben ser coherentes entre sí; una Capability Architecture que contradice la Segment o Strategic genera fragmentación.",
+    "fiabilidad": "oficial_indirecto"
+  },
+  "tecnicas": {
+    "lista_9_1": [
+      "Applying Iteration to the ADM",
+      "Applying the ADM across the Architecture Landscape",
+      "Security Architecture",
+      "SOA",
+      "Architecture Principles",
+      "Stakeholder Management",
+      "Architecture Patterns",
+      "Business Scenarios",
+      "Gap Analysis",
+      "Migration Planning Techniques",
+      "Interoperability Requirements",
+      "Business Transformation Readiness Assessment",
+      "Risk Management",
+      "Capability-Based Planning"
+    ],
+    "iteracion": {
+      "entre_ciclos": "Cada ciclo completa una descripción a un nivel; la Fase F lanza ciclos más detallados; pueden correr en paralelo.",
+      "dentro_de_ciclo": [
+        {
+          "tipo": "Architecture Capability",
+          "fases": "Preliminar↔A y H↔Preliminar"
+        },
+        {
+          "tipo": "Architecture Development",
+          "fases": "B a F"
+        },
+        {
+          "tipo": "Transition Planning",
+          "fases": "E↔F"
+        },
+        {
+          "tipo": "Architecture Governance",
+          "fases": "G↔H"
+        }
+      ],
+      "fiabilidad": "secundario"
+    },
+    "stakeholder_management": {
+      "pasos": [
+        "Identificar interesados",
+        "Determinar poder e interés",
+        "Plan de comunicación",
+        "Influir y comprometer"
+      ],
+      "matriz": [
+        {
+          "poder": "bajo",
+          "interes": "bajo",
+          "accion": "Monitorear"
+        },
+        {
+          "poder": "bajo",
+          "interes": "alto",
+          "accion": "Mantener informado"
+        },
+        {
+          "poder": "alto",
+          "interes": "bajo",
+          "accion": "Mantener satisfecho"
+        },
+        {
+          "poder": "alto",
+          "interes": "alto",
+          "accion": "Gestionar de cerca"
+        }
+      ],
+      "actitudes_10": [
+        "Champion",
+        "Supporter",
+        "Neutral",
+        "Resistor",
+        "Blocker"
+      ],
+      "fiabilidad": "secundario"
+    },
+    "architecture_principles": {
+      "plantilla": [
+        {
+          "parte": "Name",
+          "def": "Fácil de recordar; sin ambigüedad ni tecnología concreta."
+        },
+        {
+          "parte": "Statement",
+          "def": "Regla fundamental clara y concisa."
+        },
+        {
+          "parte": "Rationale",
+          "def": "Beneficios de negocio en lenguaje de negocio."
+        },
+        {
+          "parte": "Implications",
+          "def": "Recursos, costos y tareas necesarios para cumplirla."
+        }
+      ],
+      "cualidades_conjunto": [
+        "Understandable",
+        "Robust",
+        "Complete",
+        "Consistent",
+        "Stable"
+      ],
+      "evitar_palabras": [
+        "apoyar (support)",
+        "abierto (open)",
+        "considerar (consider)",
+        "evitar (avoid)"
+      ],
+      "ejemplo_propio_no_oficial": {
+        "name": "Dato único del estudiante",
+        "statement": "Cada dato del estudiante tiene una sola fuente autorizada.",
+        "rationale": "Evita inconsistencias en matrícula y pagos.",
+        "implications": "Se necesita un maestro de estudiantes y reglas de integración."
+      },
+      "fiabilidad": "oficial_indirecto"
+    },
+    "business_scenarios": {
+      "pasos": [
+        "Identificar, documentar y ordenar el problema",
+        "Identificar el entorno de negocio y técnico",
+        "Identificar y documentar los objetivos",
+        "Identificar actores humanos y su lugar en el modelo de negocio",
+        "Identificar actores informáticos y su lugar en el modelo tecnológico",
+        "Definir roles y responsabilidades de los actores",
+        "Refinar el escenario si es necesario"
+      ],
+      "regla": "El problema se expresa como qué lograr, no cómo (evitar el empuje tecnológico).",
+      "fiabilidad": "oficial_indirecto"
+    },
+    "gap_analysis": {
+      "def": "Compara línea base y objetivo para validar la arquitectura en desarrollo.",
+      "matriz": "ABB de la base en eje vertical; ABB del objetivo en el horizontal; fila 'New' y columna 'Eliminated'; 'Included' (carry over) cuando está en ambas.",
+      "regla": "Todo lo que cae en New o Eliminated es una brecha: justificar la eliminación o reincorporar/desarrollar/adquirir.",
+      "fiabilidad": "oficial_indirecto"
+    },
+    "migration_planning": [
+      {
+        "tecnica": "Implementation Factor Assessment and Deduction Matrix",
+        "para": "Factores (riesgos, problemas, supuestos, dependencias), descripción y deducción para el plan."
+      },
+      {
+        "tecnica": "Consolidated Gaps, Solutions and Dependencies Matrix",
+        "para": "Agrupa brechas, soluciones posibles y dependencias; base para work packages."
+      },
+      {
+        "tecnica": "Architecture Definition Increments Table",
+        "para": "Secuencia de proyectos y entregables en el tiempo; muestra arquitecturas de transición."
+      },
+      {
+        "tecnica": "Transition Architecture State Evolution Table",
+        "para": "Cruza servicios de una taxonomía (p. ej. TRM) con estados; muestra qué SBB se mantiene, transiciona, reemplaza o es nuevo."
+      },
+      {
+        "tecnica": "Business Value Assessment",
+        "para": "Puntúa opciones con índice de valor y de riesgo con criterios ponderados."
+      }
+    ],
+    "migration_planning_fiabilidad": "secundario",
+    "interoperabilidad": {
+      "def": "Capacidad de compartir información y servicios.",
+      "tipos": [
+        "Operacional/de negocio",
+        "De información",
+        "Técnica"
+      ],
+      "grados": [
+        "1: Intercambio de datos no estructurado",
+        "2: Intercambio estructurado",
+        "3: Compartición fluida de datos",
+        "4: Compartición fluida de información"
+      ],
+      "fiabilidad": "oficial_indirecto"
+    },
+    "btra": "Business Transformation Readiness Assessment: se hace en la Fase A para evaluar y cuantificar la preparación de la organización para el cambio.",
+    "riesgos": {
+      "niveles": [
+        "Riesgo inicial (antes de mitigar)",
+        "Riesgo residual (después de mitigar)"
+      ],
+      "efecto": [
+        "Catastrophic",
+        "Critical",
+        "Marginal",
+        "Negligible"
+      ],
+      "frecuencia": [
+        "Frequent",
+        "Likely",
+        "Occasional",
+        "Seldom",
+        "Unlikely"
+      ],
+      "impacto_combinado": [
+        "Extremadamente alto",
+        "Alto",
+        "Moderado",
+        "Bajo"
+      ],
+      "fiabilidad": "oficial_indirecto"
+    },
+    "capability_based_planning": "Planificar alrededor de capacidades de negocio (lo que el negocio hace; relativamente estable).",
+    "architecture_patterns": "Los building blocks son lo que usas; el patrón dice cómo, cuándo y por qué usarlos y qué compromisos implican. Son activos reutilizables del continuo; las Fases A–D indican cuándo considerarlos."
+  },
+  "gobernanza_formal": {
+    "capability_framework_9_1": [
+      "Establishing an Architecture Capability",
+      "Architecture Board",
+      "Architecture Compliance",
+      "Architecture Contracts",
+      "Architecture Governance",
+      "Architecture Maturity Models",
+      "Architecture Skills Framework"
+    ],
+    "architecture_board": {
+      "rol": "Asegura que las arquitecturas de TI sean coherentes y apoyen las necesidades del negocio.",
+      "responsabilidades": [
+        "Hacer cumplir la conformidad",
+        "Mejorar la madurez de la disciplina de arquitectura",
+        "Asegurar la adopción del desarrollo basado en arquitectura",
+        "Aplicar buenas prácticas",
+        "Revisar el cumplimiento de estándares"
+      ],
+      "equivalente_curso": "Comité de Arquitectura Empresarial (CAE) / Architecture Review Board"
+    },
+    "architecture_contract": "Acuerdo conjunto entre socios de desarrollo y patrocinadores sobre entregables, calidad y adecuación al propósito.",
+    "maturity_models": "Evalúan la posición actual y orientan cuándo y cómo avanzar.",
+    "skills_framework": "Niveles de competencia requeridos por rol.",
+    "niveles_conformidad": [
+      {
+        "nivel": "Irrelevant",
+        "orden": 1,
+        "def": "La implementación no tiene nada en común con la especificación."
+      },
+      {
+        "nivel": "Consistent",
+        "orden": 2,
+        "def": "Algunas características se implementan según la especificación."
+      },
+      {
+        "nivel": "Compliant",
+        "orden": 3,
+        "def": "Todo lo implementado está cubierto por la especificación (puede faltar parte de lo especificado)."
+      },
+      {
+        "nivel": "Conformant",
+        "orden": 4,
+        "def": "Todo lo especificado está implementado conforme a los estándares (puede haber extras)."
+      },
+      {
+        "nivel": "Fully conformant",
+        "orden": 5,
+        "def": "Correspondencia total entre especificación e implementación."
+      },
+      {
+        "nivel": "Non-conformant",
+        "orden": 0,
+        "def": "Algunas características se implementan contra la especificación."
+      }
+    ],
+    "nota_conformidad": "El estándar advierte que el uso de estos términos puede variar entre organizaciones. Un hallazgo non-conformant se corrige, se rechaza o se gestiona con una dispensa (waiver) gobernada.",
+    "fiabilidad": "oficial_indirecto"
+  },
+  "archimate": {
+    "relacion": "TOGAF es el método (ADM); ArchiMate es el lenguaje de modelado. Estándares independientes y complementarios de The Open Group.",
+    "mapeo_capas_fases": [
+      {
+        "fase": "B",
+        "capa": "Business Layer"
+      },
+      {
+        "fase": "C",
+        "capa": "Application Layer (cubre datos y aplicaciones)"
+      },
+      {
+        "fase": "D",
+        "capa": "Technology Layer"
+      },
+      {
+        "fase": "E-F",
+        "capa": "Implementation & Migration (extensión)"
+      }
+    ],
+    "nota": "Motivation se usa en fases tempranas y requisitos (uso común, no afirmado por las fuentes). Los viewpoints de ArchiMate pueden representar artefactos del ADM.",
+    "herramienta_curso": "Archi (mencionada en S14)",
+    "fiabilidad": "secundario"
+  },
+  "certificacion": {
+    "fuente": "The Open Group — TOGAF Examinations (© 2023-2025), hoja de datos leída completa",
+    "fiabilidad": "oficial_leido",
+    "examenes": [
+      {
+        "nombre": "TOGAF Enterprise Architecture Part 1 (Foundation)",
+        "codigo": "OGEA-101",
+        "base": "10th Edition",
+        "items": 40,
+        "tipo": "Opción múltiple simple (1 punto)",
+        "tiempo_min": 60,
+        "aprobacion": "60% (24/40)",
+        "libro": "Cerrado",
+        "prerrequisitos": "Ninguno",
+        "otorga": "TOGAF Enterprise Architecture Foundation (+ crédito parcial hacia Practitioner)"
+      },
+      {
+        "nombre": "TOGAF Enterprise Architecture Part 2 (Practitioner)",
+        "codigo": "OGEA-102",
+        "base": "10th Edition",
+        "items": 8,
+        "tipo": "Escenario, opción múltiple compleja con puntuación gradual (5/3/1/0)",
+        "tiempo_min": 90,
+        "aprobacion": "60% (24/40 puntos)",
+        "libro": "Abierto (copia electrónica integrada)",
+        "prerrequisitos": "Foundation, o aprobar Part 1 el mismo día en el mismo centro",
+        "otorga": "TOGAF Enterprise Architecture Practitioner"
+      },
+      {
+        "nombre": "TOGAF Enterprise Architecture Combined Part 1 and 2",
+        "codigo": "OGEA-103",
+        "base": "10th Edition",
+        "items": 48,
+        "tipo": "40 simples + 8 de escenario",
+        "tiempo_min": 150,
+        "aprobacion": "Cada sección ≥ 60%",
+        "libro": "Parte 1 cerrado; Parte 2 abierto",
+        "prerrequisitos": "Ninguno",
+        "otorga": "Practitioner"
+      },
+      {
+        "nombre": "TOGAF Business Architecture Foundation",
+        "codigo": "OGBA-101",
+        "base": "10th Edition",
+        "items": 40,
+        "tiempo_min": 60,
+        "aprobacion": "no leído"
+      },
+      {
+        "nombre": "TOGAF Enterprise Architecture Bridge",
+        "codigo": "OGEA-10B",
+        "base": "10th Edition (para titulados TOGAF 9)",
+        "items": 14,
+        "tiempo_min": 60,
+        "aprobacion": "no leído"
+      },
+      {
+        "nombre": "TOGAF 9 Part 1 / Part 2 / Combined",
+        "base": "9.2",
+        "items": "40 / 8 / 48",
+        "tiempo_min": "60 / 90 / 150",
+        "aprobacion": "no leído"
+      }
+    ],
+    "entrega": "Centros autorizados o remoto con Pearson VUE OnVUE; supervisado."
+  },
+  "mapa_curso_estandar": [
+    {
+      "tema": "Fase B",
+      "curso": "'Arquitectura Empresarial' en una lista",
+      "estandar": "Business Architecture (Arquitectura de Negocio)"
+    },
+    {
+      "tema": "Salidas de la Fase A",
+      "curso": "Declaración de trabajo",
+      "estandar": "Statement of Architecture Work aprobado, Capability Assessment, Architecture Vision, Communications Plan, borrador de ADD. El Request for Architecture Work es entrada."
+    },
+    {
+      "tema": "Fases C/D",
+      "curso": "Documento de definición de arquitectura",
+      "estandar": "Correcto; lo acompañan la Architecture Requirements Specification y la Architecture Roadmap."
+    },
+    {
+      "tema": "Fase E",
+      "curso": "Roadmap inicial, work packages, arquitecturas de transición",
+      "estandar": "Coincide; formalizado como Roadmap v0.1 y Migration Plan v0.1."
+    },
+    {
+      "tema": "Fase F",
+      "curso": "Plan de migración, criterios de éxito",
+      "estandar": "Coincide; salida formal Implementation and Migration Plan; añade Implementation Governance Model y Change Requests."
+    },
+    {
+      "tema": "Fase G",
+      "curso": "Informe de cumplimiento, registro de decisiones, Compliance Review, repositorio",
+      "estandar": "Salidas formales: Architecture Contract y Compliance Assessments."
+    },
+    {
+      "tema": "Fase H",
+      "curso": "Evaluación de valor, de amenazas/oportunidades, solicitud de cambio",
+      "estandar": "Salidas formales: actualizaciones de arquitectura, cambios al marco y principios, nuevo Request for Architecture Work, compliance/contract actualizados. Evaluar amenazas, oportunidades y valor son actividades."
+    },
+    {
+      "tema": "Comité de Arquitectura",
+      "curso": "CAE",
+      "estandar": "Architecture Board"
+    },
+    {
+      "tema": "TRM",
+      "curso": "Taxonomía + gráfico",
+      "estandar": "Foundation Architecture dentro del Architecture Continuum"
+    },
+    {
+      "tema": "Metamodelo (S14)",
+      "curso": "Capas de negocio, datos, aplicaciones, técnica",
+      "estandar": "Metamodelo de contenido del Content Framework"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "tema": "ADM",
+      "pregunta": "¿Qué fase del ADM se aplica a lo largo de todo el ciclo y está en el centro de la rueda?",
+      "opciones": [
+        "Fase Preliminar",
+        "Gestión de Requisitos",
+        "Fase A",
+        "Fase H"
+      ],
+      "correcta": 1,
+      "explicacion": "La Gestión de Requisitos es transversal a todas las fases."
+    },
+    {
+      "id": 2,
+      "tema": "Fase A",
+      "pregunta": "¿Cuál NO es una salida de la Fase A?",
+      "opciones": [
+        "Architecture Vision",
+        "Communications Plan",
+        "Capability Assessment",
+        "Request for Architecture Work"
+      ],
+      "correcta": 3,
+      "explicacion": "El Request for Architecture Work es una entrada que viene del patrocinador."
+    },
+    {
+      "id": 3,
+      "tema": "Content Framework",
+      "pregunta": "Un documento formalmente revisado y aprobado por los interesados es un…",
+      "opciones": [
+        "Artefacto",
+        "Entregable",
+        "Building block",
+        "Catálogo"
+      ],
+      "correcta": 1,
+      "explicacion": "Los entregables son productos contractuales aprobados formalmente."
+    },
+    {
+      "id": 4,
+      "tema": "Content Framework",
+      "pregunta": "Un catálogo, una matriz y un diagrama son tipos de…",
+      "opciones": [
+        "Entregables",
+        "Principios",
+        "Artefactos",
+        "Estados de arquitectura"
+      ],
+      "correcta": 2,
+      "explicacion": "Los artefactos se clasifican en catálogos, matrices y diagramas."
+    },
+    {
+      "id": 5,
+      "tema": "Content Framework",
+      "pregunta": "«Servicio de gestión de clientes», como capacidad requerida y neutral a la tecnología, es un…",
+      "opciones": [
+        "SBB",
+        "ABB",
+        "Entregable",
+        "Patrón"
+      ],
+      "correcta": 1,
+      "explicacion": "Un ABB describe la capacidad; el SBB es el producto concreto (p. ej. un CRM)."
+    },
+    {
+      "id": 6,
+      "tema": "Continuum",
+      "pregunta": "¿Qué continuo describe la implementación mediante SBB reutilizables?",
+      "opciones": [
+        "Architecture Continuum",
+        "Solutions Continuum",
+        "Standards Continuum",
+        "Governance Continuum"
+      ],
+      "correcta": 1,
+      "explicacion": "El Solutions Continuum implementa lo definido en el Architecture Continuum."
+    },
+    {
+      "id": 7,
+      "tema": "Continuum",
+      "pregunta": "Los cuatro niveles del Enterprise Continuum son…",
+      "opciones": [
+        "Strategic, Segment, Capability, Project",
+        "Foundation, Common Systems, Industry, Organization-Specific",
+        "Business, Data, Application, Technology",
+        "Baseline, Candidate, Transition, Target"
+      ],
+      "correcta": 1,
+      "explicacion": "Van de lo genérico a lo específico de la organización."
+    },
+    {
+      "id": 8,
+      "tema": "Continuum",
+      "pregunta": "El TRM es un ejemplo de arquitectura de nivel…",
+      "opciones": [
+        "Foundation",
+        "Common Systems",
+        "Industry",
+        "Organization-Specific"
+      ],
+      "correcta": 0,
+      "explicacion": "El TRM es una Foundation Architecture; el III-RM es Common Systems."
+    },
+    {
+      "id": 9,
+      "tema": "Niveles",
+      "pregunta": "Un resumen de largo plazo de toda la empresa corresponde a una…",
+      "opciones": [
+        "Capability Architecture",
+        "Segment Architecture",
+        "Strategic Architecture",
+        "Transition Architecture"
+      ],
+      "correcta": 2,
+      "explicacion": "La Strategic Architecture da la vista global de largo plazo."
+    },
+    {
+      "id": 10,
+      "tema": "Repositorio",
+      "pregunta": "¿Qué clase del repositorio contiene los estándares a los que deben ajustarse las arquitecturas?",
+      "opciones": [
+        "Reference Library",
+        "Governance Log",
+        "Standards Information Base",
+        "Architecture Landscape"
+      ],
+      "correcta": 2,
+      "explicacion": "En la ed. 10 se llama Standards Library."
+    },
+    {
+      "id": 11,
+      "tema": "Repositorio",
+      "pregunta": "¿Qué clase del repositorio guarda evaluaciones de conformidad y el portafolio de proyectos?",
+      "opciones": [
+        "Governance Log",
+        "Reference Library",
+        "Architecture Metamodel",
+        "Standards Information Base"
+      ],
+      "correcta": 0,
+      "explicacion": "En la ed. 10 se llama Governance Repository."
+    },
+    {
+      "id": 12,
+      "tema": "Principios",
+      "pregunta": "Las cuatro partes de la plantilla de un principio de arquitectura son…",
+      "opciones": [
+        "Name, Scope, Owner, Date",
+        "Name, Statement, Rationale, Implications",
+        "Goal, Statement, Risk, Cost",
+        "Title, Description, Priority, Status"
+      ],
+      "correcta": 1,
+      "explicacion": "Name, Statement, Rationale e Implications."
+    },
+    {
+      "id": 13,
+      "tema": "Principios",
+      "pregunta": "¿Cuál NO es una cualidad de un buen conjunto de principios?",
+      "opciones": [
+        "Understandable",
+        "Robust",
+        "Stable",
+        "Rápido"
+      ],
+      "correcta": 3,
+      "explicacion": "Las cinco son Understandable, Robust, Complete, Consistent y Stable."
+    },
+    {
+      "id": 14,
+      "tema": "Gap Analysis",
+      "pregunta": "En la matriz de análisis de brechas, ¿qué se agrega a los ejes?",
+      "opciones": [
+        "Fila 'Eliminated' y columna 'New'",
+        "Fila 'New' y columna 'Eliminated'",
+        "Solo una columna 'Gap'",
+        "Una fila 'Risk'"
+      ],
+      "correcta": 1,
+      "explicacion": "Fila 'New' en el eje de la base y columna 'Eliminated' en el del objetivo."
+    },
+    {
+      "id": 15,
+      "tema": "Stakeholders",
+      "pregunta": "Un stakeholder con mucho poder y poco interés debe…",
+      "opciones": [
+        "Monitorearse",
+        "Mantenerse informado",
+        "Mantenerse satisfecho",
+        "Gestionarse de cerca"
+      ],
+      "correcta": 2,
+      "explicacion": "Poder alto + interés bajo = mantener satisfecho."
+    },
+    {
+      "id": 16,
+      "tema": "Técnicas",
+      "pregunta": "¿En qué fase se realiza la Business Transformation Readiness Assessment?",
+      "opciones": [
+        "Preliminar",
+        "A",
+        "F",
+        "H"
+      ],
+      "correcta": 1,
+      "explicacion": "Se hace en la Fase A para evaluar la preparación para el cambio."
+    },
+    {
+      "id": 17,
+      "tema": "Gobernanza",
+      "pregunta": "Nivel de conformidad en que todo lo implementado está cubierto por la especificación, aunque falte parte de ella:",
+      "opciones": [
+        "Consistent",
+        "Compliant",
+        "Conformant",
+        "Fully conformant"
+      ],
+      "correcta": 1,
+      "explicacion": "Compliant: lo implementado está cubierto; puede faltar parte de lo especificado."
+    },
+    {
+      "id": 18,
+      "tema": "Fase H",
+      "pregunta": "Ante un cambio mayor, un nuevo Request for Architecture Work es salida de la Fase…",
+      "opciones": [
+        "A",
+        "F",
+        "G",
+        "H"
+      ],
+      "correcta": 3,
+      "explicacion": "La Fase H lanza un nuevo ciclo del ADM mediante un nuevo Request for Architecture Work."
+    },
+    {
+      "id": 19,
+      "tema": "Certificación",
+      "pregunta": "El examen EA Part 1 tiene…",
+      "opciones": [
+        "40 ítems y 60% para aprobar",
+        "8 ítems y 60%",
+        "60 ítems y 55%",
+        "40 ítems y 80%"
+      ],
+      "correcta": 0,
+      "explicacion": "40 ítems, 60 minutos, 24/40 para aprobar."
+    },
+    {
+      "id": 20,
+      "tema": "Certificación",
+      "pregunta": "¿Qué examen es de libro abierto?",
+      "opciones": [
+        "EA Part 1",
+        "EA Part 2",
+        "Ambos",
+        "Ninguno"
+      ],
+      "correcta": 1,
+      "explicacion": "El Part 2 (Practitioner) es abierto, con copia electrónica integrada."
+    },
+    {
+      "id": 21,
+      "tema": "ArchiMate",
+      "pregunta": "¿Cuál es la relación entre TOGAF y ArchiMate?",
+      "opciones": [
+        "ArchiMate es una fase del ADM",
+        "TOGAF es el método y ArchiMate el lenguaje de modelado; son estándares complementarios",
+        "Son el mismo estándar",
+        "ArchiMate reemplaza al ADM"
+      ],
+      "correcta": 1,
+      "explicacion": "Son estándares independientes y complementarios de The Open Group."
+    },
+    {
+      "id": 22,
+      "tema": "Iteración",
+      "pregunta": "¿Qué tipo de iteración ocurre principalmente entre las Fases G y H?",
+      "opciones": [
+        "Architecture Capability",
+        "Architecture Development",
+        "Transition Planning",
+        "Architecture Governance"
+      ],
+      "correcta": 3,
+      "explicacion": "Architecture Governance iteration (G↔H)."
+    },
+    {
+      "id": 23,
+      "tema": "Requisitos",
+      "pregunta": "La Gestión de Requisitos NO prioriza ni resuelve los requisitos; esa tarea…",
+      "opciones": [
+        "No existe en TOGAF",
+        "La hace cada fase del ADM",
+        "La hace solo la Fase H",
+        "La hace el Architecture Board"
+      ],
+      "correcta": 1,
+      "explicacion": "Requirements Management gestiona el proceso; cada fase dispone de los requisitos."
+    },
+    {
+      "id": 24,
+      "tema": "Gobernanza",
+      "pregunta": "Un hallazgo non-conformant que no se corrige ni se rechaza se trata mediante…",
+      "opciones": [
+        "Una dispensa (waiver) gobernada",
+        "Un nuevo principio",
+        "Una arquitectura de transición",
+        "Un Request for Architecture Work"
+      ],
+      "correcta": 0,
+      "explicacion": "Se corrige, se rechaza o se gestiona con un waiver bajo el proceso de gobernanza."
+    },
+    {
+      "id": 25,
+      "tema": "Entregables",
+      "pregunta": "¿Qué documento acompaña a la Architecture Definition Document y suele formar parte de los contratos de implementación?",
+      "opciones": [
+        "Communications Plan",
+        "Architecture Requirements Specification",
+        "Capability Assessment",
+        "Statement of Architecture Work"
+      ],
+      "correcta": 1,
+      "explicacion": "La ARS es la compañera de la ADD."
+    }
+  ],
+  "pendientes": [
+    "Texto directo de la edición 10 y de la Pocket Guide (requieren login).",
+    "Nombre del 4.º nivel de abstracción de la ed. 10 (los 3 primeros: Contextual, Conceptual, Lógico).",
+    "Definición exacta de Architecture Metamodel (marcada no contrastada).",
+    "Pass mark de Business Architecture Foundation, Bridge y exámenes TOGAF 9.",
+    "Listado completo de artefactos de la edición 10 (la tabla es de la 9.x).",
+    "Detalle de pasos por fase B–H en el estándar.",
+    "Series Guides (ágil, digital, seguridad, microservicios, capacidades, flujos de valor)."
+  ]
+}

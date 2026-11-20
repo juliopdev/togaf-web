@@ -1,0 +1,1096 @@
+{
+  "meta": {
+    "curso": "Diseño e Implementación de Arquitectura Empresarial",
+    "institucion": "Universidad Tecnológica del Perú (UTP)",
+    "idioma": "es",
+    "generado": "2026-11-19",
+    "nota": "Contenido extraído de las diapositivas de ./.sessions/. Los campos 'flashcards' son preguntas DERIVADAS del contenido (origen: derivado), no texto literal de las diapositivas. Ver TOGAF_contenido_curso.md para el detalle y las inconsistencias del material."
+  },
+  "fuentes": [
+    {
+      "id": "S07",
+      "archivo": "S07_13 Arquitectura empresarial .pdf",
+      "sesion": "13",
+      "tema": "Introducción a la AE y tipos de arquitectura"
+    },
+    {
+      "id": "S08",
+      "archivo": "S08_15 Togaf fase a y b.pdf",
+      "sesion": "15",
+      "tema": "TOGAF: Preliminar, Fase A, Fase B"
+    },
+    {
+      "id": "P18",
+      "archivo": "PPT_Sesión 18_TOGAF_Fases_C_D_completo.pdf",
+      "sesion": "18 (laboratorio)",
+      "tema": "TOGAF Fases C y D con UML / Visual Paradigm"
+    },
+    {
+      "id": "S10",
+      "archivo": "S10_19 Togaf fase e (1).pdf",
+      "sesion": "19-20",
+      "tema": "TOGAF Fase E"
+    },
+    {
+      "id": "S11",
+      "archivo": "S11_21-22 Togaf fase f.pdf / S11_21-22 Togaf fase f-CASO (1).pptx",
+      "sesion": "21-22",
+      "tema": "TOGAF Fase F + caso de presupuestos"
+    },
+    {
+      "id": "S12",
+      "archivo": "S12_23-24Togaf fase g h (1).pdf",
+      "sesion": "23-24",
+      "tema": "TOGAF Fases G y H"
+    },
+    {
+      "id": "S13",
+      "archivo": "S13 25-26 Gobernabilidad.pdf",
+      "sesion": "25-26",
+      "tema": "Gobernabilidad, Comité de Arquitectura, TRM"
+    },
+    {
+      "id": "S14",
+      "archivo": "S14 27-28 Marcos de trabajo.pdf",
+      "sesion": "27-28",
+      "tema": "Frameworks, metamodelo, herramientas"
+    }
+  ],
+  "definiciones": {
+    "arquitectura_empresarial": {
+      "texto": "Disciplina estratégica que define la estructura, los procesos y la tecnología de una organización para alinearla con sus objetivos de negocio, permitiendo optimizar operaciones, mejorar la toma de decisiones y planificar la transformación digital.",
+      "fuente": "S07"
+    },
+    "togaf": {
+      "texto": "Marco de referencia estandarizado y método para el desarrollo y gestión de arquitecturas empresariales; alinea la estrategia de negocio con procesos y tecnologías, mejorando eficiencia y toma de decisiones.",
+      "fuente": "S08"
+    },
+    "adm": {
+      "texto": "Architecture Development Method: ciclo de TOGAF con una Fase Preliminar y ocho fases iterativas (A–H), con una fase transversal de Gestión de Requisitos.",
+      "fuente": "S08"
+    }
+  },
+  "beneficios_ae": [
+    {
+      "nombre": "Mayor agilidad",
+      "detalle": "Adaptarse más rápido a cambios del mercado y del entorno tecnológico."
+    },
+    {
+      "nombre": "Reducción de costos",
+      "detalle": "Evita duplicación de sistemas y servicios de TI."
+    },
+    {
+      "nombre": "Visión integral",
+      "detalle": "Comprensión completa de la empresa, de procesos a sistemas."
+    },
+    {
+      "nombre": "Mejor comunicación",
+      "detalle": "Visión compartida entre departamentos."
+    }
+  ],
+  "usos_togaf": [
+    "Alinear negocio y tecnología",
+    "Optimizar recursos",
+    "Mejorar la toma de decisiones",
+    "Estandarizar enfoques (lenguaje común; evita bloqueo a soluciones propietarias)",
+    "Adaptarse al cambio"
+  ],
+  "dominios": [
+    {
+      "id": "negocio",
+      "nombre": "Arquitectura de Negocio",
+      "funcion": "Define procesos",
+      "descripcion": "Estructura y ejecución de procesos para cumplir la estrategia: misión, visión, metas, procesos, roles, políticas, reglas, capacidades, productos y servicios.",
+      "ejemplo": "Hospital: admisión de pacientes, diagnóstico, tratamiento y alta médica.",
+      "fase_adm": "B",
+      "fuente": "S07"
+    },
+    {
+      "id": "datos",
+      "nombre": "Arquitectura de Datos / Información",
+      "funcion": "Gestiona información",
+      "descripcion": "Cómo se gestiona, estructura, almacena, protege y distribuye la información: modelos de datos, flujos, calidad, seguridad y gobernanza.",
+      "ejemplo": "Banco: clientes, cuentas, créditos e historial; evita duplicar registros de un mismo cliente.",
+      "fase_adm": "C",
+      "fuente": "S07"
+    },
+    {
+      "id": "aplicaciones",
+      "nombre": "Arquitectura de Aplicaciones",
+      "funcion": "Automatiza procesos",
+      "descripcion": "Sistemas que soportan los procesos, cómo se integran y evolucionan.",
+      "ejemplo": "Supermercado: ERP, CRM, punto de venta y e-commerce; una compra online actualiza el stock automáticamente.",
+      "fase_adm": "C",
+      "fuente": "S07"
+    },
+    {
+      "id": "tecnologia",
+      "nombre": "Arquitectura de Tecnología",
+      "funcion": "Soporta infraestructura",
+      "descripcion": "Infraestructura técnica: servidores, BD, redes, dispositivos, SO, nube, seguridad, plataformas.",
+      "ejemplo": "Logística: nube en tiempo real, móviles con GPS, firewalls y redes de alta velocidad.",
+      "fase_adm": "D",
+      "fuente": "S07"
+    }
+  ],
+  "importancia_ae": [
+    "Alineación estratégica",
+    "Gestión de la complejidad",
+    "Optimización y reducción de costos",
+    "Aceleración de la transformación digital",
+    "Toma de decisiones informada"
+  ],
+  "transformacion_digital_pilares": [
+    {
+      "nombre": "Procesos empresariales",
+      "detalle": "Nuevas formas de trabajo"
+    },
+    {
+      "nombre": "Modelos de negocio",
+      "detalle": "Nuevas formas de generación de valor"
+    },
+    {
+      "nombre": "Dominio empresarial",
+      "detalle": "Nuevos mercados o productos digitales"
+    },
+    {
+      "nombre": "Organización",
+      "detalle": "Cultura y estructura digital"
+    }
+  ],
+  "fases": [
+    {
+      "id": "preliminar",
+      "orden": 0,
+      "codigo": "Prel.",
+      "nombre": "Fase Preliminar",
+      "nombre_en": "Preliminary",
+      "subtitulo": "Framework y Principios",
+      "proposito": "Define el marco de capacidades, los principios arquitectónicos y a los participantes de la organización.",
+      "objetivos": [],
+      "actividades": [],
+      "entradas": [],
+      "salidas": [
+        "Principios de arquitectura"
+      ],
+      "diagramas_matrices": [],
+      "dinamica": "Universidad que mejora su matrícula en línea: cada grupo propone 3 principios de arquitectura.",
+      "fuente": [
+        "S08",
+        "S10"
+      ],
+      "cobertura": "Solo se nombra en las diapositivas; contenido mínimo."
+    },
+    {
+      "id": "A",
+      "orden": 1,
+      "codigo": "A",
+      "nombre": "Visión de la Arquitectura",
+      "nombre_en": "Architecture Vision",
+      "proposito": "Definir la visión, propósito, alcance y requisitos clave de la arquitectura y obtener la aprobación para proceder.",
+      "objetivos": [
+        "Establecer el Proyecto de Arquitectura (iniciar el ciclo y definir el alcance)",
+        "Crear una visión clara de alto nivel de las capacidades de negocio a lograr",
+        "Identificar interesados, sus inquietudes y requisitos, y asegurar su compromiso",
+        "Obtener aprobación formal validando contexto de negocio, principios y objetivos"
+      ],
+      "actividades": [
+        "Definición del alcance",
+        "Identificación de interesados",
+        "Desarrollo de la visión (problema, preocupaciones, escenarios de negocio)",
+        "Creación de la Arquitectura de Visión (resumen de la arquitectura objetivo candidata y su valor)",
+        "Aprobación de la Declaración de Trabajo de arquitectura"
+      ],
+      "entradas": [],
+      "salidas": [
+        "Declaración de Trabajo de Arquitectura aprobada",
+        "Arquitectura de Visión"
+      ],
+      "diagramas_matrices": [],
+      "dinamica": "Caso universidad: identificar 2 stakeholders y lo que esperan del nuevo sistema (ej. estudiantes: matrícula más rápida desde el celular).",
+      "fuente": [
+        "S08"
+      ]
+    },
+    {
+      "id": "B",
+      "orden": 2,
+      "codigo": "B",
+      "nombre": "Arquitectura de Negocio",
+      "nombre_en": "Business Architecture",
+      "proposito": "Determinar estructura de la organización, procesos, objetivos de negocio, funciones, servicios y roles; modelar procesos as-is y to-be e identificar brechas.",
+      "objetivos": [],
+      "actividades": [
+        "Modelar procesos de negocio actuales (as-is)",
+        "Modelar procesos de negocio futuros (to-be)",
+        "Identificar gaps entre situación actual y deseada"
+      ],
+      "entradas": [],
+      "salidas": [
+        "Procesos as-is / to-be",
+        "Brechas de negocio"
+      ],
+      "diagramas_matrices": [],
+      "dinamica": "Mini-diagrama de matrícula. As-is: cola, formulario en ventanilla, espera. To-be: portal, selección de cursos, pago online, confirmación inmediata.",
+      "fuente": [
+        "S08"
+      ],
+      "nota": "En la lista ADM de S08 aparece como 'Arquitectura Empresarial'; el contenido es Arquitectura de Negocio."
+    },
+    {
+      "id": "C",
+      "orden": 3,
+      "codigo": "C",
+      "nombre": "Arquitecturas de Sistemas de Información",
+      "nombre_en": "Information Systems Architectures",
+      "proposito": "Describir las arquitecturas de sistemas de información de un proyecto: arquitectura de datos y de aplicaciones.",
+      "subdominios": [
+        {
+          "id": "C-datos",
+          "nombre": "Arquitectura de Datos",
+          "definicion": "Estructura e interacción con las principales fuentes de información: activos de datos lógicos, físicos y gestión de los recursos de información.",
+          "pasos": [
+            "Desarrollar la línea base de la arquitectura de datos",
+            "Desarrollar la arquitectura de datos objetivo",
+            "Realizar análisis de brechas",
+            "Definir una hoja de ruta de componentes candidatos",
+            "Resolver impactos en el ambiente arquitectónico",
+            "Realizar una revisión formal con las partes interesadas",
+            "Finalizar la arquitectura de datos",
+            "Crear el Documento de Definición de Arquitectura"
+          ],
+          "salidas": [
+            "Versiones refinadas de entregables de fases previas",
+            "Línea base de la arquitectura de datos",
+            "Arquitectura de datos de destino (modelo de datos empresariales, modelo lógico, modelos de proceso de gestión de datos, entidad de datos)",
+            "Especificación de requisitos de arquitectura (brechas, hoja de ruta, interoperabilidad de datos, requisitos comerciales y de aplicación actualizados)",
+            "Hoja de ruta de los componentes de arquitectura de datos"
+          ],
+          "matrices": [
+            "Entidad de datos / Función comercial",
+            "Aplicación / Datos"
+          ],
+          "diagramas": [
+            "Datos conceptuales",
+            "Datos lógicos",
+            "Seguridad de datos",
+            "Migración de datos",
+            "Ciclo de vida de datos"
+          ]
+        },
+        {
+          "id": "C-aplicaciones",
+          "nombre": "Arquitectura de Aplicaciones",
+          "definicion": "Estructura e interacción de las aplicaciones como grupo de capacidades que proveen funciones de negocio clave y gestión de los activos de información.",
+          "pasos": [
+            "Desarrollar la línea base de la arquitectura de aplicación",
+            "Desarrollar la arquitectura de aplicación objetivo",
+            "Realizar análisis de brechas",
+            "Definir una hoja de ruta de componentes candidatos",
+            "Resolver impactos en el ambiente arquitectónico",
+            "Realizar una revisión formal con las partes interesadas",
+            "Finalizar la arquitectura de la aplicación",
+            "Crear el Documento de Definición de Arquitectura"
+          ],
+          "salidas": [
+            "Versiones refinadas de entregables de fases anteriores",
+            "Línea base de la arquitectura de aplicación",
+            "Arquitectura de aplicación de destino",
+            "Especificación de requisitos (interoperabilidad de aplicaciones, requisitos comerciales y de datos actualizados)",
+            "Hoja de ruta de componentes de arquitectura de aplicación"
+          ],
+          "matrices": [],
+          "diagramas": [
+            "Comunicación de la aplicación",
+            "Aplicación y ubicación del usuario",
+            "Casos de uso de la aplicación",
+            "Proceso / realización de aplicaciones",
+            "Ingeniería de software",
+            "Distribución / despliegue de software"
+          ]
+        }
+      ],
+      "objetivos": [],
+      "actividades": [],
+      "entradas": [],
+      "salidas": [],
+      "dinamica": "Laboratorio UML en Visual Paradigm: servicio al cliente (alquiler de carros) y hospedaje/reserva.",
+      "fuente": [
+        "P18"
+      ]
+    },
+    {
+      "id": "D",
+      "orden": 4,
+      "codigo": "D",
+      "nombre": "Arquitectura Tecnológica",
+      "nombre_en": "Technology Architecture",
+      "proposito": "Consideraciones para desarrollar la arquitectura tecnológica en un proyecto de AE.",
+      "objetivos": [],
+      "actividades": [
+        "Desarrollar la línea base de la arquitectura tecnológica",
+        "Desarrollar la arquitectura tecnológica objetivo",
+        "Realizar análisis de brechas",
+        "Definir una hoja de ruta de componentes candidatos",
+        "Resolver impactos en el ambiente arquitectónico",
+        "Realizar una revisión formal de las partes interesadas",
+        "Finalizar la arquitectura tecnológica",
+        "Crear el Documento de Definición de Arquitectura"
+      ],
+      "entradas": [
+        "Requisitos de las fases B y C"
+      ],
+      "salidas": [
+        "Componentes tecnológicos y sus relaciones con los sistemas de información",
+        "Plataformas tecnológicas y su descomposición",
+        "Distribución de carga, comunicaciones físicas de red, especificaciones de hardware",
+        "Línea base de la arquitectura tecnológica",
+        "Especificación de requisitos de arquitectura tecnológica",
+        "Hoja de ruta de componentes de arquitectura tecnológica"
+      ],
+      "diagramas_matrices": [
+        "Entornos y ubicaciones",
+        "Descomposición de plataforma",
+        "Procesamiento",
+        "Hardware / computación en red / comunicaciones"
+      ],
+      "dinamica": "Diagrama de despliegue del sistema de hospedaje y reserva.",
+      "fuente": [
+        "P18"
+      ]
+    },
+    {
+      "id": "E",
+      "orden": 5,
+      "codigo": "E",
+      "nombre": "Oportunidades y Soluciones",
+      "nombre_en": "Opportunities & Solutions",
+      "proposito": "Consolidar brechas de B, C y D, identificar soluciones y proyectos, y generar la versión inicial de la hoja de ruta de la arquitectura.",
+      "objetivos": [
+        "Generar el plan de itinerario (hoja de ruta) de arquitectura base a destino",
+        "Identificar los medios de entrega: proyectos, programas o carteras",
+        "Consolidar el análisis de brechas de las fases B, C y D",
+        "Desarrollar arquitecturas de transición si se requiere enfoque incremental",
+        "Agrupar trabajos en paquetes de trabajo",
+        "Evaluar la capacidad de cambio de la organización"
+      ],
+      "actividades": [
+        "Identificar dependencias y agrupar en paquetes de trabajo manejables",
+        "Priorizar según retorno de inversión, viabilidad y capacidad de cambio",
+        "Revisar capacidades (outsourcing, reestructuración, nuevas habilidades)",
+        "Identificar soluciones: construir, comprar o reutilizar",
+        "Evaluar viabilidad: recursos, costos, riesgos, beneficios"
+      ],
+      "entradas": [
+        "Brechas de las fases B, C y D"
+      ],
+      "salidas": [
+        "Architecture Roadmap (inicial)",
+        "Work Packages",
+        "Arquitecturas de transición"
+      ],
+      "diagramas_matrices": [],
+      "dinamica": "'Si fueras consultor…': procesos lentos, sistemas desordenados y tecnología antigua; ¿qué mejorarías primero?",
+      "fuente": [
+        "S10"
+      ],
+      "soluciones_tecnologicas": [
+        {
+          "bloque": "Aplicaciones Empresariales",
+          "ejemplos": [
+            "ERP",
+            "CRM",
+            "BPM",
+            "Gestión de contenidos"
+          ]
+        },
+        {
+          "bloque": "Infraestructura y Cloud",
+          "ejemplos": [
+            "AWS",
+            "Azure",
+            "GCP",
+            "Microservicios",
+            "Virtualización",
+            "Contenedores (Kubernetes)"
+          ]
+        },
+        {
+          "bloque": "Integración y Datos",
+          "ejemplos": [
+            "ESB",
+            "APIs",
+            "Big Data",
+            "Data Lakes"
+          ]
+        }
+      ],
+      "nota": "La S10 incluye además 5 'oportunidades de mejora' del propio TOGAF (ágil, herramientas modernas, experiencia del cliente, tailoring, tecnologías emergentes y datos); no son la actividad central de la Fase E."
+    },
+    {
+      "id": "F",
+      "orden": 6,
+      "codigo": "F",
+      "nombre": "Planificación de la Migración",
+      "nombre_en": "Migration Planning",
+      "proposito": "Transformar la arquitectura objetivo en un plan de implementación y migración detallado: hoja de ruta, proyectos, costos, beneficios, dependencias y prioridades.",
+      "objetivos": [
+        "Crear el Plan de Implementación y Migración",
+        "Alinear con la estrategia empresarial y la gestión de la cartera de proyectos",
+        "Evaluar proyectos (costo-beneficio, dependencias, interconexiones)",
+        "Priorizar proyectos",
+        "Comunicar el valor y los costos a los interesados"
+      ],
+      "actividades": [
+        "Confirmar dependencias entre proyectos",
+        "Desarrollar el plan de migración detallado",
+        "Evaluar riesgos y elaborar estrategias de mitigación",
+        "Coordinar con gestión de proyectos (PMO) y TI",
+        "Desarrollar un cronograma detallado e identificar recursos"
+      ],
+      "entradas": [
+        "Resultados de la Fase E (Work Packages, Roadmap, priorización)"
+      ],
+      "salidas": [
+        "Plan de migración aprobado",
+        "Planes de implementación",
+        "Criterios de éxito",
+        "Asignación de recursos"
+      ],
+      "diagramas_matrices": [],
+      "dinamica": "'El rompecabezas de la implementación': ordenar configurar servidor en la nube, instalar ERP, pruebas de integración, capacitar usuarios, migrar datos del sistema antiguo.",
+      "fuente": [
+        "S11"
+      ],
+      "ejemplo_practico": {
+        "proyectos": [
+          {
+            "id": "P1",
+            "descripcion": "Migración de infraestructura a la nube",
+            "prioridad": "Alta"
+          },
+          {
+            "id": "P2",
+            "descripcion": "Implementación ERP",
+            "prioridad": "Alta"
+          },
+          {
+            "id": "P3",
+            "descripcion": "App móvil de entregas",
+            "prioridad": "Media"
+          }
+        ],
+        "dependencias": [
+          "El ERP depende de la infraestructura en la nube",
+          "La app móvil depende del ERP"
+        ],
+        "plan": [
+          {
+            "etapa": 1,
+            "actividad": "Migrar infraestructura",
+            "duracion": "3 meses"
+          },
+          {
+            "etapa": 2,
+            "actividad": "Implementar ERP",
+            "duracion": "6 meses"
+          },
+          {
+            "etapa": 3,
+            "actividad": "Desarrollar y desplegar app móvil",
+            "duracion": "3 meses"
+          }
+        ],
+        "riesgo": {
+          "descripcion": "Interrupción del servicio durante la migración",
+          "mitigacion": "Pruebas piloto y respaldos"
+        },
+        "recursos": "Equipo técnico, analistas de negocio, presupuesto estimado por proyecto"
+      }
+    },
+    {
+      "id": "G",
+      "orden": 7,
+      "codigo": "G",
+      "nombre": "Gobernanza de la Implementación",
+      "nombre_en": "Implementation Governance",
+      "proposito": "Supervisar la implementación para que los proyectos se alineen con la arquitectura y entreguen el valor de negocio esperado.",
+      "objetivos": [],
+      "actividades": [
+        "Supervisión del progreso",
+        "Gestión del cumplimiento (principios, estándares, políticas)",
+        "Gestión de riesgos",
+        "Asegurar el valor",
+        "Revisión de conformidad periódica",
+        "Guía de desarrollo"
+      ],
+      "elementos": [
+        {
+          "nombre": "Ejecución de proyectos bajo control arquitectónico",
+          "ejemplo": "El ERP se implementa en la nube aprobada y no en servidores locales."
+        },
+        {
+          "nombre": "Mecanismos de gobernanza (Architecture Board, gates, KPI)",
+          "ejemplo": "Revisión trimestral de seguridad, disponibilidad y escalabilidad."
+        },
+        {
+          "nombre": "Gestión de la conformidad",
+          "ejemplo": "Un proveedor propone otra base de datos: requiere aprobación del comité."
+        },
+        {
+          "nombre": "Gestión de riesgos y cambios durante la implementación",
+          "ejemplo": "Cambiar infraestructura por presupuesto sin afectar la escalabilidad prevista."
+        },
+        {
+          "nombre": "Comunicación y coordinación con stakeholders",
+          "ejemplo": "Reuniones semanales arquitectura–TI."
+        }
+      ],
+      "entradas": [
+        "Hoja de ruta (Fase F)"
+      ],
+      "salidas": [
+        "Informe de cumplimiento arquitectónico",
+        "Registro de decisiones de cambio",
+        "Reporte de revisión de arquitectura (Architecture Compliance Review)",
+        "Actualización del Repositorio de Arquitectura"
+      ],
+      "diagramas_matrices": [],
+      "dinamica": "'El proyecto que salió mal' y 'El Arquitecto Controlador' (un integrante aprueba/rechaza cambios justificando con principios arquitectónicos).",
+      "fuente": [
+        "S12"
+      ]
+    },
+    {
+      "id": "H",
+      "orden": 8,
+      "codigo": "H",
+      "nombre": "Gestión de Cambios de Arquitectura",
+      "nombre_en": "Architecture Change Management",
+      "proposito": "Gestionar el cambio para que la arquitectura siga siendo relevante y la organización logre los beneficios esperados.",
+      "objetivos": [
+        "Evaluar el proceso de implementación y los beneficios logrados",
+        "Gestionar cambios para mantener la arquitectura útil y relevante",
+        "Asegurar el cumplimiento y ejecutar el marco de gobierno de la arquitectura"
+      ],
+      "actividades": [],
+      "entradas": [],
+      "salidas": [
+        "Evaluación del valor de implementación",
+        "Evaluación de amenazas y oportunidades",
+        "Solicitud de cambio de arquitectura (Request for Architecture Change)"
+      ],
+      "diagramas_matrices": [],
+      "dinamica": "'El cambio inesperado': expansión internacional que exige soporte multilingüe en el ERP; definir qué revisar (datos, aplicaciones, tecnología) y qué proceso seguir.",
+      "fuente": [
+        "S12"
+      ]
+    },
+    {
+      "id": "REQ",
+      "orden": 99,
+      "codigo": "—",
+      "nombre": "Gestión de Requisitos (transversal)",
+      "nombre_en": "Requirements Management",
+      "proposito": "Se aplica a lo largo de todo el ADM; es el centro de la rueda del ADM.",
+      "objetivos": [],
+      "actividades": [],
+      "entradas": [],
+      "salidas": [],
+      "diagramas_matrices": [],
+      "dinamica": "",
+      "fuente": [
+        "S08"
+      ],
+      "cobertura": "Solo se nombra; sin desarrollo en las diapositivas."
+    }
+  ],
+  "gobernabilidad": {
+    "definicion": "Conjunto de prácticas, políticas y procesos para controlar, guiar y alinear las decisiones de arquitectura con los objetivos estratégicos.",
+    "pilares": [
+      {
+        "nombre": "Estandarización",
+        "detalle": "Reglas, patrones y tecnologías permitidas."
+      },
+      {
+        "nombre": "Toma de decisiones",
+        "detalle": "Comités / Architecture Review Board que aprueban o rechazan iniciativas."
+      },
+      {
+        "nombre": "Monitoreo y cumplimiento",
+        "detalle": "Supervisar proyectos y evaluar riesgos técnicos."
+      }
+    ],
+    "importancia": [
+      "Alineación estratégica",
+      "Reducción de costos",
+      "Toma de decisiones ágil",
+      "Coherencia y estandarización",
+      "Gestión de riesgos"
+    ],
+    "componentes": [
+      "Roles y responsabilidades",
+      "Principios y políticas",
+      "Procesos de toma de decisiones",
+      "Criterios de cumplimiento y control",
+      "Repositorio y herramientas"
+    ],
+    "comite_arquitectura": {
+      "nombre": "Comité de Arquitectura Empresarial (CAE)",
+      "responsabilidades": [
+        "Gobernanza",
+        "Alineación estratégica",
+        "Toma de decisiones",
+        "Gestión de riesgos"
+      ]
+    },
+    "trm": {
+      "nombre": "Modelo Técnico de Referencia (TRM)",
+      "definicion": "Marco conceptual que categoriza y estandariza tecnologías, estándares y componentes de infraestructura y plataformas de software.",
+      "partes": [
+        {
+          "nombre": "Taxonomía",
+          "detalle": "Terminología y agrupación de servicios tecnológicos por niveles."
+        },
+        {
+          "nombre": "Gráfico TRM",
+          "detalle": "Representación visual de la interacción entre aplicaciones y servicios de plataforma y comunicación."
+        }
+      ],
+      "beneficios": [
+        "Portabilidad",
+        "Interoperabilidad",
+        "Reutilización",
+        "Estándar abierto"
+      ]
+    },
+    "fuente": "S13"
+  },
+  "frameworks": [
+    {
+      "nombre": "TOGAF",
+      "descripcion": "Amplio y adaptable; se enfoca en el ciclo ADM."
+    },
+    {
+      "nombre": "Zachman Framework",
+      "descripcion": "Clasifica los elementos arquitectónicos en una matriz conceptual."
+    },
+    {
+      "nombre": "FEAF (Federal Enterprise Architecture Framework)",
+      "descripcion": "Enfocado en instituciones públicas."
+    },
+    {
+      "nombre": "Gartner EA Framework",
+      "descripcion": "Basado en capacidades de negocio."
+    }
+  ],
+  "metamodelo": {
+    "definicion": "Estructura que define las reglas para construir otros modelos: qué elementos pueden existir y cómo se relacionan.",
+    "capas": [
+      {
+        "nombre": "Negocio",
+        "contenido": "Capacidades, unidades organizativas, procesos, productos y servicios."
+      },
+      {
+        "nombre": "Datos e Información",
+        "contenido": "Activos de datos estructurados y no estructurados."
+      },
+      {
+        "nombre": "Aplicaciones",
+        "contenido": "Componentes de software, aplicaciones e interfaces."
+      },
+      {
+        "nombre": "Técnica / Infraestructura",
+        "contenido": "Hardware, red, nube, dispositivos."
+      }
+    ],
+    "soporte_implementacion": [
+      "Arquitectura de soluciones y de referencia",
+      "Automatización e infraestructura (IaC, CI/CD)",
+      "Marcos de trabajo (p. ej. TOGAF)"
+    ],
+    "fuente": "S14"
+  },
+  "herramientas": {
+    "modelado": [
+      "Draw.io",
+      "Visio",
+      "Bizagi Modeler"
+    ],
+    "arquitectura_empresarial": [
+      "Enterprise Architect",
+      "Archi",
+      "BizzDesign",
+      "Mega HOPEX"
+    ],
+    "gestion": [
+      "Jira",
+      "Confluence"
+    ],
+    "laboratorio_curso": [
+      "Visual Paradigm Community Edition"
+    ],
+    "fuente": [
+      "S14",
+      "P18"
+    ]
+  },
+  "casos": [
+    {
+      "id": "matricula",
+      "titulo": "Matrícula en línea de una universidad",
+      "usado_en": [
+        "Preliminar",
+        "A",
+        "B"
+      ],
+      "descripcion": "Principios, stakeholders y procesos as-is/to-be."
+    },
+    {
+      "id": "alquiler-carros",
+      "titulo": "Sistema de servicio al cliente (alquiler de carros)",
+      "usado_en": [
+        "C",
+        "D"
+      ],
+      "descripcion": "Paquetes, casos de uso, actividades, objetos y dominio en UML."
+    },
+    {
+      "id": "hospedaje",
+      "titulo": "Sistema de hospedaje y reserva",
+      "usado_en": [
+        "C",
+        "D"
+      ],
+      "descripcion": "Casos de uso: consultar habitaciones, gestionar reserva, huésped, hospedaje, finalizar hospedaje. Clases entidad, despliegue y navegabilidad."
+    },
+    {
+      "id": "migracion-erp",
+      "titulo": "Nube → ERP → App móvil",
+      "usado_en": [
+        "E",
+        "F"
+      ],
+      "descripcion": "Dependencias, plan de 12 meses, riesgos y mitigación."
+    },
+    {
+      "id": "presupuesto-mantenimiento",
+      "titulo": "Presupuesto de mantenimiento (diagrama de estados)",
+      "usado_en": [
+        "F"
+      ],
+      "descripcion": "Estados: pendiente → iniciado → pendiente de aprobación → aprobado/rechazado → enviado al cliente → confirmado/rechazado."
+    },
+    {
+      "id": "arquitecto-controlador",
+      "titulo": "El Arquitecto Controlador",
+      "usado_en": [
+        "G"
+      ],
+      "descripcion": "Juego de roles: aprobar/rechazar cambios según principios."
+    },
+    {
+      "id": "erp-multilingue",
+      "titulo": "Expansión internacional: ERP multilingüe",
+      "usado_en": [
+        "H"
+      ],
+      "descripcion": "Impacto del cambio en datos, aplicaciones y tecnología."
+    },
+    {
+      "id": "sin-gobierno",
+      "titulo": "¿Quién controla la tecnología?",
+      "usado_en": [
+        "Gobernabilidad"
+      ],
+      "descripcion": "Compras sin estándares por cada área."
+    }
+  ],
+  "glosario": [
+    {
+      "es": "Línea base",
+      "en": "Baseline",
+      "def": "Estado actual de una arquitectura."
+    },
+    {
+      "es": "Arquitectura objetivo / de destino",
+      "en": "Target Architecture",
+      "def": "Estado futuro deseado."
+    },
+    {
+      "es": "Análisis de brechas",
+      "en": "Gap Analysis",
+      "def": "Diferencias entre base y objetivo; origen de oportunidades."
+    },
+    {
+      "es": "Hoja de ruta",
+      "en": "Architecture Roadmap",
+      "def": "Secuencia temporal de incrementos de la arquitectura base a la de destino."
+    },
+    {
+      "es": "Arquitectura de transición",
+      "en": "Transition Architecture",
+      "def": "Estado intermedio que aporta valor de forma incremental."
+    },
+    {
+      "es": "Paquete de trabajo",
+      "en": "Work Package",
+      "def": "Agrupación de actividades/proyectos con dependencias y responsables."
+    },
+    {
+      "es": "Declaración de Trabajo de Arquitectura",
+      "en": "Statement of Architecture Work",
+      "def": "Documento aprobado al cierre de la Fase A."
+    },
+    {
+      "es": "Documento de Definición de Arquitectura",
+      "en": "Architecture Definition Document",
+      "def": "Entregable que recoge la arquitectura definida en B–D."
+    },
+    {
+      "es": "Comité de Arquitectura",
+      "en": "Architecture Board / Architecture Review Board",
+      "def": "Órgano que aprueba o rechaza iniciativas y hace cumplir estándares."
+    },
+    {
+      "es": "Revisión de conformidad",
+      "en": "Architecture Compliance Review",
+      "def": "Evaluación formal de que lo construido respeta la arquitectura."
+    },
+    {
+      "es": "Solicitud de cambio de arquitectura",
+      "en": "Request for Architecture Change",
+      "def": "Documento que impulsa cambios futuros en la arquitectura de destino."
+    },
+    {
+      "es": "Repositorio de Arquitectura",
+      "en": "Architecture Repository",
+      "def": "Almacén de artefactos, métricas y lecciones aprendidas."
+    },
+    {
+      "es": "Modelo Técnico de Referencia",
+      "en": "Technical Reference Model (TRM)",
+      "def": "Taxonomía + gráfico que estandarizan tecnologías y servicios."
+    },
+    {
+      "es": "Metamodelo",
+      "en": "Metamodel",
+      "def": "Reglas de qué elementos existen y cómo se relacionan."
+    },
+    {
+      "es": "As-is / To-be",
+      "en": "As-is / To-be",
+      "def": "Situación o proceso actual / futuro."
+    },
+    {
+      "es": "Sistema heredado",
+      "en": "Legacy system",
+      "def": "Sistema antiguo a modernizar o migrar."
+    },
+    {
+      "es": "Oficina de gestión de proyectos",
+      "en": "PMO",
+      "def": "Coordina con la planificación de la migración (Fase F)."
+    },
+    {
+      "es": "Infraestructura como código",
+      "en": "IaC",
+      "def": "Automatización de infraestructura (soporte a la implementación)."
+    }
+  ],
+  "flashcards": [
+    {
+      "origen": "derivado",
+      "fase": "AE",
+      "q": "¿Qué es la Arquitectura Empresarial?",
+      "a": "Disciplina estratégica que define estructura, procesos y tecnología de una organización para alinearla con sus objetivos de negocio."
+    },
+    {
+      "origen": "derivado",
+      "fase": "AE",
+      "q": "¿Cuáles son los 4 dominios de la AE?",
+      "a": "Negocio, Datos/Información, Aplicaciones y Tecnología."
+    },
+    {
+      "origen": "derivado",
+      "fase": "AE",
+      "q": "Función de cada arquitectura (frase del curso)",
+      "a": "Negocio define procesos; Datos gestiona información; Aplicaciones automatiza procesos; Tecnología soporta infraestructura."
+    },
+    {
+      "origen": "derivado",
+      "fase": "TOGAF",
+      "q": "¿Qué es TOGAF?",
+      "a": "Marco de referencia estandarizado y método para desarrollar y gestionar arquitecturas empresariales."
+    },
+    {
+      "origen": "derivado",
+      "fase": "ADM",
+      "q": "¿De cuántas fases consta el ADM?",
+      "a": "Una Fase Preliminar y ocho fases iterativas (A–H), con Gestión de Requisitos transversal."
+    },
+    {
+      "origen": "derivado",
+      "fase": "ADM",
+      "q": "Nombra las fases A a H en orden",
+      "a": "A Visión · B Negocio · C Sistemas de Información · D Tecnología · E Oportunidades y Soluciones · F Planificación de la Migración · G Gobernanza de la Implementación · H Gestión de Cambios."
+    },
+    {
+      "origen": "derivado",
+      "fase": "Prel.",
+      "q": "¿Qué se define en la Fase Preliminar?",
+      "a": "El marco de capacidades, los principios arquitectónicos y los participantes."
+    },
+    {
+      "origen": "derivado",
+      "fase": "A",
+      "q": "¿Cuál es el objetivo principal de la Fase A?",
+      "a": "Definir el proyecto de arquitectura, crear la visión y obtener aprobación para continuar."
+    },
+    {
+      "origen": "derivado",
+      "fase": "A",
+      "q": "¿Qué documento se aprueba al final de la Fase A?",
+      "a": "La Declaración de Trabajo de arquitectura (Statement of Architecture Work)."
+    },
+    {
+      "origen": "derivado",
+      "fase": "B",
+      "q": "¿Qué se modela en la Fase B?",
+      "a": "Procesos de negocio actuales (as-is) y futuros (to-be), identificando brechas."
+    },
+    {
+      "origen": "derivado",
+      "fase": "C",
+      "q": "¿Qué arquitecturas cubre la Fase C?",
+      "a": "Arquitectura de datos y arquitectura de aplicaciones."
+    },
+    {
+      "origen": "derivado",
+      "fase": "C",
+      "q": "¿Qué es la arquitectura de datos en TOGAF (según el curso)?",
+      "a": "Estructura e interacción con las fuentes de información: activos de datos lógicos y físicos y gestión de recursos de información."
+    },
+    {
+      "origen": "derivado",
+      "fase": "C/D",
+      "q": "Pasos comunes de las fases C y D",
+      "a": "Línea base → arquitectura objetivo → análisis de brechas → hoja de ruta de componentes → resolver impactos → revisión formal → finalizar → Documento de Definición de Arquitectura."
+    },
+    {
+      "origen": "derivado",
+      "fase": "D",
+      "q": "Menciona dos diagramas de la Fase D",
+      "a": "Entornos y ubicaciones; descomposición de plataforma; procesamiento; hardware/computación en red/comunicaciones."
+    },
+    {
+      "origen": "derivado",
+      "fase": "E",
+      "q": "¿Qué produce la Fase E?",
+      "a": "Versión inicial de la hoja de ruta, paquetes de trabajo y, si hace falta, arquitecturas de transición."
+    },
+    {
+      "origen": "derivado",
+      "fase": "E",
+      "q": "¿Qué decisión se toma sobre cada capacidad requerida en la Fase E?",
+      "a": "Construirla, comprarla o reutilizar una solución existente."
+    },
+    {
+      "origen": "derivado",
+      "fase": "F",
+      "q": "¿Cuál es el propósito de la Fase F?",
+      "a": "Transformar la arquitectura objetivo en un plan de implementación y migración detallado."
+    },
+    {
+      "origen": "derivado",
+      "fase": "F",
+      "q": "Entradas y salidas de la Fase F",
+      "a": "Entradas: resultados de la Fase E (work packages, roadmap, priorización). Salidas: plan de migración aprobado, planes de implementación, criterios de éxito, asignación de recursos."
+    },
+    {
+      "origen": "derivado",
+      "fase": "G",
+      "q": "¿Qué garantiza la Fase G?",
+      "a": "Que los proyectos de implementación se alineen con la arquitectura y entreguen el valor esperado."
+    },
+    {
+      "origen": "derivado",
+      "fase": "G",
+      "q": "Entregables de la Fase G",
+      "a": "Informe de cumplimiento arquitectónico, registro de decisiones de cambio, Architecture Compliance Review, actualización del Repositorio de Arquitectura."
+    },
+    {
+      "origen": "derivado",
+      "fase": "H",
+      "q": "¿Qué gestiona la Fase H?",
+      "a": "El cambio de la arquitectura para mantenerla relevante y asegurar los beneficios esperados."
+    },
+    {
+      "origen": "derivado",
+      "fase": "H",
+      "q": "Entregables clave de la Fase H según el curso",
+      "a": "Evaluación del valor de implementación, evaluación de amenazas y oportunidades, solicitud de cambio de arquitectura."
+    },
+    {
+      "origen": "derivado",
+      "fase": "Gob.",
+      "q": "Los 3 pilares de la gobernabilidad de arquitectura",
+      "a": "Estandarización, toma de decisiones y monitoreo y cumplimiento."
+    },
+    {
+      "origen": "derivado",
+      "fase": "TRM",
+      "q": "¿Qué dos partes tiene el TRM?",
+      "a": "Taxonomía y Gráfico TRM."
+    },
+    {
+      "origen": "derivado",
+      "fase": "TRM",
+      "q": "Beneficios del TRM",
+      "a": "Portabilidad, interoperabilidad, reutilización y estándar abierto."
+    },
+    {
+      "origen": "derivado",
+      "fase": "Frameworks",
+      "q": "¿Qué clasifica el Zachman Framework?",
+      "a": "Los elementos arquitectónicos en una matriz conceptual."
+    },
+    {
+      "origen": "derivado",
+      "fase": "Frameworks",
+      "q": "¿Para quién está enfocado FEAF?",
+      "a": "Instituciones públicas."
+    },
+    {
+      "origen": "derivado",
+      "fase": "Metamodelo",
+      "q": "Las 4 capas del metamodelo",
+      "a": "Negocio, Datos e Información, Aplicaciones y Técnica (infraestructura)."
+    },
+    {
+      "origen": "derivado",
+      "fase": "Herramientas",
+      "q": "Herramientas de arquitectura empresarial mencionadas",
+      "a": "Enterprise Architect, Archi, BizzDesign y Mega HOPEX."
+    }
+  ],
+  "advertencias_material": [
+    "Fase B figura como 'Arquitectura Empresarial' en la lista ADM de S08; es Arquitectura de Negocio.",
+    "El 'Logro de la sesión' de S08 no coincide con su contenido (plantilla reutilizada).",
+    "S11 incluye una diapositiva duplicada de modelado de negocio (de la sesión 5).",
+    "S13 se titula 'Fase g, h' pero trata gobernabilidad y TRM.",
+    "Las 'oportunidades de mejora' de S10 se refieren a TOGAF en sí, no a la actividad de la Fase E.",
+    "Falta el archivo S09 (sesiones ≈16–17, probable teoría de Fases C y D)."
+  ],
+  "brechas_cobertura": [
+    "Detalle de la Fase Preliminar y de Gestión de Requisitos",
+    "Content Framework y Architecture Content",
+    "Enterprise Continuum y Architecture Repository",
+    "ADM Guidelines & Techniques",
+    "Architecture Governance / Capability Framework y contratos",
+    "Niveles de arquitectura (estratégico, segmento, capacidad) y tailoring",
+    "Diferencias entre versiones de TOGAF",
+    "ArchiMate",
+    "Preguntas tipo examen"
+  ]
+}

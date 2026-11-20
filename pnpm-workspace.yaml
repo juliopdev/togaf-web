@@ -1,0 +1,7 @@
+# Estructura plana de node_modules: rutas más cortas (Windows sin rutas largas habilitadas).
+nodeLinker: hoisted
+
+# Dependencias autorizadas a ejecutar scripts de instalación (binarios nativos).
+allowBuilds:
+  '@tailwindcss/oxide': true
+  esbuild: true

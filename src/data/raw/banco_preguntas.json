@@ -1,0 +1,1066 @@
+{
+  "meta": {
+    "descripcion": "Banco de preguntas adicional para la web. Se suma a las 25 de togaf_complemento.json (quiz). Todas son DERIVADAS del contenido (no oficiales).",
+    "generado": "2026-11-20",
+    "temas_validos": [
+      "ae",
+      "togaf-adm",
+      "fase-preliminar",
+      "fase-A",
+      "fase-B",
+      "fase-C",
+      "fase-D",
+      "fase-E",
+      "fase-F",
+      "fase-G",
+      "fase-H",
+      "fase-REQ",
+      "gobernanza",
+      "frameworks",
+      "estandar",
+      "content-framework",
+      "continuum",
+      "niveles",
+      "tecnicas",
+      "archimate",
+      "certificacion"
+    ]
+  },
+  "preguntas": [
+    {
+      "id": "c01",
+      "tema": "ae",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "Según el curso, ¿qué función cumple la arquitectura de aplicaciones?",
+      "opciones": [
+        "Define procesos",
+        "Gestiona información",
+        "Automatiza procesos",
+        "Soporta infraestructura"
+      ],
+      "correcta": 2,
+      "explicacion": "Negocio define procesos; datos gestiona información; aplicaciones automatiza procesos; tecnología soporta infraestructura."
+    },
+    {
+      "id": "c02",
+      "tema": "ae",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "¿Qué arquitectura organiza los activos de datos lógicos y físicos de la empresa?",
+      "opciones": [
+        "Arquitectura de negocio",
+        "Arquitectura de datos / información",
+        "Arquitectura de aplicaciones",
+        "Arquitectura de tecnología"
+      ],
+      "correcta": 1,
+      "explicacion": "La arquitectura de datos asegura que la información sea precisa, coherente y esté disponible."
+    },
+    {
+      "id": "c03",
+      "tema": "ae",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "Un hospital define los procesos de admisión, diagnóstico, tratamiento y alta médica. ¿Qué arquitectura describe esto?",
+      "opciones": [
+        "Arquitectura de negocio",
+        "Arquitectura de datos",
+        "Arquitectura de aplicaciones",
+        "Arquitectura de tecnología"
+      ],
+      "correcta": 0,
+      "explicacion": "Es el ejemplo del curso para la arquitectura de negocio: procesos coordinados hacia el objetivo de la organización."
+    },
+    {
+      "id": "c04",
+      "tema": "ae",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "Un supermercado integra ERP, CRM, punto de venta y e-commerce para que el stock se actualice solo con cada compra online. ¿Qué arquitectura define esa integración?",
+      "opciones": [
+        "Arquitectura de negocio",
+        "Arquitectura de datos",
+        "Arquitectura de aplicaciones",
+        "Arquitectura de tecnología"
+      ],
+      "correcta": 2,
+      "explicacion": "La arquitectura de aplicaciones define qué sistemas se necesitan y cómo se comunican."
+    },
+    {
+      "id": "c05",
+      "tema": "ae",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "¿Cuál NO es uno de los pilares de la transformación digital mencionados en el curso?",
+      "opciones": [
+        "Procesos empresariales",
+        "Modelos de negocio",
+        "Organización",
+        "Reducción de personal"
+      ],
+      "correcta": 3,
+      "explicacion": "Los cuatro pilares son procesos empresariales, modelos de negocio, dominio empresarial y organización."
+    },
+    {
+      "id": "c06",
+      "tema": "ae",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "Según el curso, la AE reduce costos principalmente porque…",
+      "opciones": [
+        "Evita duplicar sistemas y servicios de TI",
+        "Elimina la necesidad de infraestructura",
+        "Reemplaza a la gestión de proyectos",
+        "Automatiza todas las decisiones"
+      ],
+      "correcta": 0,
+      "explicacion": "Al tener una visión integral se eliminan redundancias en aplicaciones y procesos."
+    },
+    {
+      "id": "c07",
+      "tema": "togaf-adm",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "¿Qué es TOGAF según el curso?",
+      "opciones": [
+        "Un lenguaje de modelado gráfico",
+        "Un marco de referencia estandarizado y un método para desarrollar y gestionar arquitecturas empresariales",
+        "Una norma ISO de calidad de software",
+        "Una metodología ágil de desarrollo de software"
+      ],
+      "correcta": 1,
+      "explicacion": "TOGAF alinea la estrategia de negocio con procesos y tecnología mediante un marco y un método (el ADM)."
+    },
+    {
+      "id": "c08",
+      "tema": "togaf-adm",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "Que TOGAF ofrezca un lenguaje común entre arquitectos ayuda sobre todo a…",
+      "opciones": [
+        "Eliminar la fase de pruebas",
+        "Prescindir de los interesados",
+        "Reducir ambigüedades y el bloqueo a soluciones propietarias",
+        "Evitar documentar la arquitectura"
+      ],
+      "correcta": 2,
+      "explicacion": "Es el beneficio «estandarizar enfoques» del curso."
+    },
+    {
+      "id": "c09",
+      "tema": "togaf-adm",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "Además de la Fase Preliminar, ¿cuántas fases iterativas tiene el ADM?",
+      "opciones": [
+        "6",
+        "8",
+        "9",
+        "10"
+      ],
+      "correcta": 1,
+      "explicacion": "Ocho fases (A–H), más la Gestión de Requisitos transversal."
+    },
+    {
+      "id": "c10",
+      "tema": "fase-A",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "¿Cuál es uno de los objetivos principales de la Fase A?",
+      "opciones": [
+        "Obtener la aprobación formal para avanzar con la arquitectura",
+        "Diseñar el modelo lógico de datos",
+        "Elaborar el cronograma de migración",
+        "Supervisar la conformidad de la implementación"
+      ],
+      "correcta": 0,
+      "explicacion": "La Fase A define el proyecto, crea la visión, identifica interesados y obtiene la aprobación."
+    },
+    {
+      "id": "c11",
+      "tema": "fase-A",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "En el caso de la matrícula en línea, identificar a estudiantes, profesores, TI y rectorado corresponde a…",
+      "opciones": [
+        "Análisis de brechas (Fase B)",
+        "Gestión de riesgos (Fase F)",
+        "Revisión de conformidad (Fase G)",
+        "Identificación de interesados (Fase A)"
+      ],
+      "correcta": 3,
+      "explicacion": "Identificar stakeholders y sus expectativas es una actividad clave de la Fase A."
+    },
+    {
+      "id": "c12",
+      "tema": "fase-B",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "En la Fase B se modelan los procesos de negocio…",
+      "opciones": [
+        "Solo futuros",
+        "Actuales (as-is) y futuros (to-be)",
+        "Solo de TI",
+        "Solo los de migración"
+      ],
+      "correcta": 1,
+      "explicacion": "Se modelan ambos para identificar las brechas entre la situación actual y la deseada."
+    },
+    {
+      "id": "c13",
+      "tema": "fase-B",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "«El estudiante ingresa al portal, selecciona cursos, paga online y recibe confirmación inmediata» describe un proceso…",
+      "opciones": [
+        "To-be (futuro)",
+        "As-is (actual)",
+        "De línea base tecnológica",
+        "De gobernanza"
+      ],
+      "correcta": 0,
+      "explicacion": "Es el proceso futuro del caso de matrícula; el actual implicaba colas y ventanilla."
+    },
+    {
+      "id": "c14",
+      "tema": "fase-C",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "La Fase C desarrolla las arquitecturas de…",
+      "opciones": [
+        "Negocio y datos",
+        "Datos y aplicaciones",
+        "Aplicaciones y tecnología",
+        "Tecnología y migración"
+      ],
+      "correcta": 1,
+      "explicacion": "Fase C = Arquitecturas de Sistemas de Información: datos y aplicaciones."
+    },
+    {
+      "id": "c15",
+      "tema": "fase-C",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "Según el curso, ¿cuál es el último paso común de las Fases C y D?",
+      "opciones": [
+        "Realizar el análisis de brechas",
+        "Desarrollar la línea base",
+        "Definir la hoja de ruta de componentes",
+        "Crear el Documento de Definición de Arquitectura"
+      ],
+      "correcta": 3,
+      "explicacion": "Los ocho pasos terminan con la creación del Documento de Definición de Arquitectura."
+    },
+    {
+      "id": "c16",
+      "tema": "fase-C",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "La matriz «Entidad de datos / Función comercial» es una salida de…",
+      "opciones": [
+        "La arquitectura de datos (Fase C)",
+        "La arquitectura de negocio (Fase B)",
+        "La arquitectura tecnológica (Fase D)",
+        "La planificación de la migración (Fase F)"
+      ],
+      "correcta": 0,
+      "explicacion": "Es una de las matrices opcionales de la arquitectura de datos."
+    },
+    {
+      "id": "c17",
+      "tema": "fase-C",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "El diagrama de casos de uso de la aplicación es una salida de…",
+      "opciones": [
+        "La arquitectura de negocio (Fase B)",
+        "La arquitectura tecnológica (Fase D)",
+        "La arquitectura de aplicaciones (Fase C)",
+        "Oportunidades y soluciones (Fase E)"
+      ],
+      "correcta": 2,
+      "explicacion": "Figura entre los diagramas de la arquitectura de aplicaciones."
+    },
+    {
+      "id": "c18",
+      "tema": "fase-D",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "¿Cuál de estos es un diagrama de la Fase D?",
+      "opciones": [
+        "Diagrama de ciclo de vida de datos",
+        "Diagrama de entornos y ubicaciones",
+        "Diagrama de casos de uso de la aplicación",
+        "Diagrama de comunicación de la aplicación"
+      ],
+      "correcta": 1,
+      "explicacion": "La Fase D incluye entornos y ubicaciones, descomposición de plataforma, procesamiento y hardware/red."
+    },
+    {
+      "id": "c19",
+      "tema": "fase-D",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "La especificación de requisitos de la arquitectura tecnológica incorpora…",
+      "opciones": [
+        "Los requisitos que salen de las Fases B y C",
+        "Solo los requisitos del patrocinador",
+        "Únicamente el presupuesto",
+        "Las lecciones aprendidas de la Fase H"
+      ],
+      "correcta": 0,
+      "explicacion": "La Fase D toma los requisitos de negocio y de sistemas de información y los actualiza."
+    },
+    {
+      "id": "c20",
+      "tema": "fase-D",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "En el laboratorio, el diagrama de despliegue del sistema de hospedaje representa principalmente…",
+      "opciones": [
+        "La arquitectura de negocio",
+        "La arquitectura de datos",
+        "Los procesos as-is",
+        "La arquitectura tecnológica"
+      ],
+      "correcta": 3,
+      "explicacion": "Servidores, estaciones, red y base de datos son infraestructura: Fase D."
+    },
+    {
+      "id": "c21",
+      "tema": "fase-E",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "La Fase E se ubica entre…",
+      "opciones": [
+        "La Preliminar y la Fase A",
+        "Las Fases G y H",
+        "El diseño detallado (B, C, D) y la planificación de la migración (F)",
+        "La Fase A y la Fase B"
+      ],
+      "correcta": 2,
+      "explicacion": "Consolida las brechas de B, C y D antes del plan detallado de F."
+    },
+    {
+      "id": "c22",
+      "tema": "fase-E",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "En la Fase E, ¿qué se decide sobre cada capacidad requerida?",
+      "opciones": [
+        "Si se documenta o no",
+        "Si se construye, se compra o se reutiliza",
+        "Quién la aprueba en la Fase G",
+        "En qué lenguaje se programa"
+      ],
+      "correcta": 1,
+      "explicacion": "La identificación de soluciones decide entre desarrollar, comprar o reutilizar."
+    },
+    {
+      "id": "c23",
+      "tema": "fase-E",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "Microservicios y contenedores (Kubernetes) pertenecen al bloque de soluciones…",
+      "opciones": [
+        "Aplicaciones empresariales",
+        "Infraestructura y Cloud",
+        "Integración y Datos",
+        "Gobernanza"
+      ],
+      "correcta": 1,
+      "explicacion": "El curso agrupa nube, microservicios, virtualización y contenedores en Infraestructura y Cloud."
+    },
+    {
+      "id": "c24",
+      "tema": "fase-E",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "Un ESB, APIs y un Data Lake pertenecen al bloque de soluciones…",
+      "opciones": [
+        "Aplicaciones empresariales",
+        "Infraestructura y Cloud",
+        "Integración y Datos",
+        "Seguridad"
+      ],
+      "correcta": 2,
+      "explicacion": "Son herramientas que garantizan interoperabilidad y gestión de datos."
+    },
+    {
+      "id": "c25",
+      "tema": "fase-E",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "Agrupar las actividades de TI con sus dependencias, prioridades y responsables produce…",
+      "opciones": [
+        "Paquetes de trabajo (work packages)",
+        "Principios de arquitectura",
+        "Escenarios de negocio",
+        "Informes de conformidad"
+      ],
+      "correcta": 0,
+      "explicacion": "Los work packages son la base del roadmap y del plan de migración."
+    },
+    {
+      "id": "c26",
+      "tema": "fase-F",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "Según el curso, ¿cuáles son las entradas de la Fase F?",
+      "opciones": [
+        "Los principios de la Fase Preliminar",
+        "El modelo de datos lógico",
+        "Las solicitudes de cambio de la Fase H",
+        "Los resultados de la Fase E: work packages, roadmap y priorización"
+      ],
+      "correcta": 3,
+      "explicacion": "La Fase F convierte los resultados de E en un plan detallado."
+    },
+    {
+      "id": "c27",
+      "tema": "fase-F",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "En el ejemplo de Fase F (nube, ERP, app móvil), ¿por qué la app móvil va en la última etapa?",
+      "opciones": [
+        "Porque es la más barata",
+        "Porque depende del ERP, que a su vez depende de la nube",
+        "Porque tiene prioridad alta",
+        "Porque no requiere pruebas"
+      ],
+      "correcta": 1,
+      "explicacion": "Las dependencias determinan el orden: nube (3 meses) → ERP (6) → app móvil (3)."
+    },
+    {
+      "id": "c28",
+      "tema": "fase-F",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "¿Qué mitigación propone el curso para el riesgo de interrupción del servicio durante la migración?",
+      "opciones": [
+        "Cancelar la migración",
+        "Migrar todo en un solo día",
+        "Pruebas piloto y respaldos",
+        "Contratar más usuarios"
+      ],
+      "correcta": 2,
+      "explicacion": "Es el ejemplo de gestión de riesgos del plan de migración."
+    },
+    {
+      "id": "c29",
+      "tema": "fase-F",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "¿Con qué área debe coordinarse especialmente la Fase F?",
+      "opciones": [
+        "La oficina de gestión de proyectos (PMO) y TI",
+        "Marketing",
+        "Recursos humanos",
+        "Auditoría externa"
+      ],
+      "correcta": 0,
+      "explicacion": "El plan de migración se alinea con la gestión de la cartera de proyectos."
+    },
+    {
+      "id": "c30",
+      "tema": "fase-G",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "El objetivo principal de la Fase G es…",
+      "opciones": [
+        "Definir la visión de arquitectura",
+        "Garantizar que la implementación se ajuste a la arquitectura y entregue el valor esperado",
+        "Modelar los procesos as-is",
+        "Elegir el framework de arquitectura"
+      ],
+      "correcta": 1,
+      "explicacion": "Es la gobernanza de la implementación: control, seguimiento y revisión continua."
+    },
+    {
+      "id": "c31",
+      "tema": "fase-G",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "Durante la implementación, un proveedor propone usar una base de datos distinta a la aprobada. Según el curso…",
+      "opciones": [
+        "Se acepta si es más barata",
+        "Lo decide el proveedor",
+        "Se ignora la propuesta",
+        "Debe pasar por la aprobación del comité de arquitectura"
+      ],
+      "correcta": 3,
+      "explicacion": "Las desviaciones se documentan y las aprueba o rechaza el comité (gestión de la conformidad)."
+    },
+    {
+      "id": "c32",
+      "tema": "fase-G",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "Los puntos de revisión que verifican avance y cumplimiento durante la implementación se llaman…",
+      "opciones": [
+        "Sprints",
+        "Hotfixes",
+        "Gates",
+        "Backlogs"
+      ],
+      "correcta": 2,
+      "explicacion": "Son mecanismos de gobernanza junto con el Architecture Board y los KPI."
+    },
+    {
+      "id": "c33",
+      "tema": "fase-H",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "¿Cuál es la idea central de la Fase H según el curso?",
+      "opciones": [
+        "La arquitectura no termina: evoluciona",
+        "La arquitectura se congela tras la entrega",
+        "Solo se cambia el hardware",
+        "Los cambios no requieren gestión"
+      ],
+      "correcta": 0,
+      "explicacion": "La Fase H mantiene la arquitectura relevante gestionando el cambio de forma estructurada."
+    },
+    {
+      "id": "c34",
+      "tema": "fase-H",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "Una empresa se expande internacionalmente y necesita soporte multilingüe en su ERP. ¿Qué fase gestiona este cambio?",
+      "opciones": [
+        "Fase B",
+        "Fase D",
+        "Fase F",
+        "Fase H"
+      ],
+      "correcta": 3,
+      "explicacion": "Es la dinámica «El cambio inesperado» de la Fase H."
+    },
+    {
+      "id": "c35",
+      "tema": "gobernanza",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "¿Cuáles son los tres pilares de la gobernabilidad de arquitectura según el curso?",
+      "opciones": [
+        "Costos, plazos y alcance",
+        "Estandarización, toma de decisiones y monitoreo y cumplimiento",
+        "Negocio, datos y tecnología",
+        "Visión, misión y valores"
+      ],
+      "correcta": 1,
+      "explicacion": "Son los pilares de la sesión 25-26."
+    },
+    {
+      "id": "c36",
+      "tema": "gobernanza",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "En TOGAF, el Modelo Técnico de Referencia (TRM) se estructura en…",
+      "opciones": [
+        "Cuatro capas de negocio",
+        "Requisitos y restricciones",
+        "Taxonomía y gráfico TRM",
+        "Línea base y objetivo"
+      ],
+      "correcta": 2,
+      "explicacion": "La taxonomía define términos y niveles; el gráfico muestra cómo interactúan aplicaciones y servicios."
+    },
+    {
+      "id": "c37",
+      "tema": "gobernanza",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "El beneficio del TRM que permite ejecutar una aplicación en distintos entornos sin cambios drásticos es la…",
+      "opciones": [
+        "Portabilidad",
+        "Interoperabilidad",
+        "Reutilización",
+        "Escalabilidad"
+      ],
+      "correcta": 0,
+      "explicacion": "Los cuatro beneficios: portabilidad, interoperabilidad, reutilización y estándar abierto."
+    },
+    {
+      "id": "c38",
+      "tema": "frameworks",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "¿Qué framework de AE se basa en capacidades de negocio, según el curso?",
+      "opciones": [
+        "Zachman",
+        "FEAF",
+        "TOGAF",
+        "Gartner EA Framework"
+      ],
+      "correcta": 3,
+      "explicacion": "Zachman usa una matriz; FEAF es para el sector público; TOGAF se centra en el ADM."
+    },
+    {
+      "id": "c39",
+      "tema": "frameworks",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "¿Qué framework está enfocado en instituciones públicas?",
+      "opciones": [
+        "Zachman",
+        "FEAF",
+        "Gartner",
+        "ArchiMate"
+      ],
+      "correcta": 1,
+      "explicacion": "FEAF: Federal Enterprise Architecture Framework."
+    },
+    {
+      "id": "c40",
+      "tema": "frameworks",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "Según el curso, ¿cuál está clasificada como herramienta de arquitectura empresarial?",
+      "opciones": [
+        "Jira",
+        "Bizagi Modeler",
+        "Archi",
+        "Confluence"
+      ],
+      "correcta": 2,
+      "explicacion": "Archi, Enterprise Architect, BizzDesign y Mega HOPEX son de AE; Bizagi es de modelado; Jira y Confluence, de gestión."
+    },
+    {
+      "id": "c41",
+      "tema": "frameworks",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "¿Qué es un metamodelo según el curso?",
+      "opciones": [
+        "Una estructura que define las reglas para construir otros modelos",
+        "Un diagrama de despliegue",
+        "Un tipo de base de datos",
+        "Un cronograma de proyecto"
+      ],
+      "correcta": 0,
+      "explicacion": "Especifica qué elementos pueden existir y cómo se relacionan."
+    },
+    {
+      "id": "c42",
+      "tema": "fase-preliminar",
+      "source": "curso",
+      "fiabilidad": "curso",
+      "enunciado": "Según el curso, la Fase Preliminar define…",
+      "opciones": [
+        "El cronograma de migración",
+        "El marco de capacidades, los principios arquitectónicos y los participantes",
+        "El modelo lógico de datos",
+        "Los diagramas de despliegue"
+      ],
+      "correcta": 1,
+      "explicacion": "Es la base metodológica antes de iniciar el ciclo."
+    },
+    {
+      "id": "x01",
+      "tema": "estandar",
+      "source": "complemento",
+      "fiabilidad": "oficial_indirecto",
+      "enunciado": "¿Cuántos documentos forman el Fundamental Content de TOGAF, 10.ª edición?",
+      "opciones": [
+        "4",
+        "6",
+        "8",
+        "9"
+      ],
+      "correcta": 1,
+      "explicacion": "Introduction and Core Concepts, ADM, ADM Techniques, Applying the ADM, Architecture Content y EA Capability and Governance."
+    },
+    {
+      "id": "x02",
+      "tema": "estandar",
+      "source": "complemento",
+      "fiabilidad": "oficial_indirecto",
+      "enunciado": "¿Cuál NO es un documento del Fundamental Content de la 10.ª edición?",
+      "opciones": [
+        "ADM Techniques",
+        "Applying the ADM",
+        "Architecture Content",
+        "ArchiMate Specification"
+      ],
+      "correcta": 3,
+      "explicacion": "ArchiMate es un estándar independiente de The Open Group."
+    },
+    {
+      "id": "x03",
+      "tema": "estandar",
+      "source": "complemento",
+      "fiabilidad": "secundario",
+      "enunciado": "¿En qué año se publicó la 10.ª edición de TOGAF?",
+      "opciones": [
+        "2018",
+        "2020",
+        "2022",
+        "2024"
+      ],
+      "correcta": 2,
+      "explicacion": "Se lanzó el 25 de abril de 2022."
+    },
+    {
+      "id": "x04",
+      "tema": "fase-preliminar",
+      "source": "complemento",
+      "fiabilidad": "oficial_indirecto",
+      "enunciado": "¿Cuál es una salida de la Fase Preliminar?",
+      "opciones": [
+        "Tailored Architecture Framework",
+        "Implementation and Migration Plan",
+        "Architecture Contract",
+        "Compliance Assessment"
+      ],
+      "correcta": 0,
+      "explicacion": "La Preliminar adapta el marco y crea el repositorio inicial, el modelo organizacional y los principios."
+    },
+    {
+      "id": "x05",
+      "tema": "fase-REQ",
+      "source": "complemento",
+      "fiabilidad": "oficial_indirecto",
+      "enunciado": "Al cambiar requisitos y resolver sus conflictos, la Gestión de Requisitos genera un…",
+      "opciones": [
+        "Statement of Architecture Work",
+        "Architecture Contract",
+        "Requirements Impact Statement",
+        "Communications Plan"
+      ],
+      "correcta": 2,
+      "explicacion": "El Requirements Impact Statement guía al equipo sobre el impacto de los cambios."
+    },
+    {
+      "id": "x06",
+      "tema": "fase-REQ",
+      "source": "complemento",
+      "fiabilidad": "oficial_indirecto",
+      "enunciado": "¿Qué técnica sugiere TOGAF para identificar y documentar requisitos?",
+      "opciones": [
+        "Gap Analysis",
+        "Business Scenarios",
+        "Business Value Assessment",
+        "Risk Management"
+      ],
+      "correcta": 1,
+      "explicacion": "El primer paso de la Gestión de Requisitos usa Business Scenarios o una técnica análoga."
+    },
+    {
+      "id": "x07",
+      "tema": "content-framework",
+      "source": "complemento",
+      "fiabilidad": "oficial_indirecto",
+      "enunciado": "¿Qué describe el Architecture Content Framework?",
+      "opciones": [
+        "Cómo debe verse lo que se produce",
+        "Qué pasos seguir en cada fase",
+        "Cómo se rinde el examen",
+        "Qué herramienta usar"
+      ],
+      "correcta": 0,
+      "explicacion": "El ADM dice qué hacer; el Content Framework, cómo debe verse el resultado."
+    },
+    {
+      "id": "x08",
+      "tema": "content-framework",
+      "source": "complemento",
+      "fiabilidad": "oficial_indirecto",
+      "enunciado": "Un producto concreto que implementa una capacidad requerida es un…",
+      "opciones": [
+        "ABB",
+        "Artefacto",
+        "Entregable",
+        "SBB"
+      ],
+      "correcta": 3,
+      "explicacion": "El ABB describe la capacidad; el SBB es el componente o producto que la implementa."
+    },
+    {
+      "id": "x09",
+      "tema": "content-framework",
+      "source": "complemento",
+      "fiabilidad": "secundario",
+      "enunciado": "¿En qué fase se suelen mapear los ABB a SBB?",
+      "opciones": [
+        "Fase A",
+        "Fase C",
+        "Fase E",
+        "Fase H"
+      ],
+      "correcta": 2,
+      "explicacion": "En Oportunidades y Soluciones se identifican las soluciones que realizarán las capacidades."
+    },
+    {
+      "id": "x10",
+      "tema": "fase-F",
+      "source": "complemento",
+      "fiabilidad": "oficial_indirecto",
+      "enunciado": "¿Qué salida de la Fase F es condicional, según la madurez de la capacidad de arquitectura?",
+      "opciones": [
+        "Implementation and Migration Plan",
+        "Implementation Governance Model",
+        "Architecture Roadmap",
+        "Change Requests"
+      ],
+      "correcta": 1,
+      "explicacion": "Varias fuentes la marcan como «si la hay»."
+    },
+    {
+      "id": "x11",
+      "tema": "fase-E",
+      "source": "complemento",
+      "fiabilidad": "secundario",
+      "enunciado": "¿Qué versión de la Architecture Roadmap produce la Fase E?",
+      "opciones": [
+        "v0.1 (inicial)",
+        "v1.0 (final)",
+        "v2.0",
+        "Ninguna"
+      ],
+      "correcta": 0,
+      "explicacion": "E produce la Roadmap v0.1 y el Migration Plan v0.1; F los finaliza."
+    },
+    {
+      "id": "x12",
+      "tema": "fase-G",
+      "source": "complemento",
+      "fiabilidad": "oficial_indirecto",
+      "enunciado": "¿Cuáles son las salidas formales de la Fase G?",
+      "opciones": [
+        "Architecture Vision y Communications Plan",
+        "Tailored Framework y principios",
+        "Roadmap v0.1 y work packages",
+        "Architecture Contract y Compliance Assessments"
+      ],
+      "correcta": 3,
+      "explicacion": "El contrato firmado y las evaluaciones de conformidad; la Fase H los actualiza si hace falta."
+    },
+    {
+      "id": "x13",
+      "tema": "continuum",
+      "source": "complemento",
+      "fiabilidad": "oficial_indirecto",
+      "enunciado": "¿Qué diferencia hay entre el Enterprise Continuum y el Architecture Repository?",
+      "opciones": [
+        "Son lo mismo",
+        "El continuo clasifica los activos; el repositorio los almacena",
+        "El repositorio clasifica; el continuo almacena",
+        "El continuo solo existe en la versión 7"
+      ],
+      "correcta": 1,
+      "explicacion": "Todo activo del repositorio se clasifica en algún punto del continuo."
+    },
+    {
+      "id": "x14",
+      "tema": "continuum",
+      "source": "complemento",
+      "fiabilidad": "oficial_indirecto",
+      "enunciado": "El III-RM es un ejemplo de arquitectura de nivel…",
+      "opciones": [
+        "Foundation",
+        "Common Systems",
+        "Industry",
+        "Organization-Specific"
+      ],
+      "correcta": 1,
+      "explicacion": "El TRM es Foundation; el III-RM es Common Systems."
+    },
+    {
+      "id": "x15",
+      "tema": "continuum",
+      "source": "complemento",
+      "fiabilidad": "secundario",
+      "enunciado": "En la 10.ª edición, ¿cómo se llama lo que antes era el Governance Log?",
+      "opciones": [
+        "Standards Library",
+        "Reference Library",
+        "Governance Repository",
+        "Solutions Landscape"
+      ],
+      "correcta": 2,
+      "explicacion": "Además, la Standards Information Base pasa a llamarse Standards Library."
+    },
+    {
+      "id": "x16",
+      "tema": "niveles",
+      "source": "complemento",
+      "fiabilidad": "oficial_indirecto",
+      "enunciado": "¿Qué arquitectura muestra en detalle cómo la empresa soporta una unidad de capacidad?",
+      "opciones": [
+        "Capability Architecture",
+        "Segment Architecture",
+        "Strategic Architecture",
+        "Foundation Architecture"
+      ],
+      "correcta": 0,
+      "explicacion": "Strategic = toda la empresa a largo plazo; Segment = un área; Capability = una unidad de capacidad."
+    },
+    {
+      "id": "x17",
+      "tema": "tecnicas",
+      "source": "complemento",
+      "fiabilidad": "oficial_indirecto",
+      "enunciado": "¿Qué escala de efecto usa la técnica de gestión de riesgos de TOGAF?",
+      "opciones": [
+        "Alto, medio, bajo",
+        "Rojo, ámbar, verde",
+        "Crítico, mayor, menor, trivial",
+        "Catastrophic, Critical, Marginal, Negligible"
+      ],
+      "correcta": 3,
+      "explicacion": "El efecto se combina con la frecuencia (Frequent, Likely, Occasional, Seldom, Unlikely)."
+    },
+    {
+      "id": "x18",
+      "tema": "tecnicas",
+      "source": "complemento",
+      "fiabilidad": "oficial_indirecto",
+      "enunciado": "El riesgo que queda después de aplicar las mitigaciones se llama…",
+      "opciones": [
+        "Riesgo inicial",
+        "Riesgo residual",
+        "Riesgo latente",
+        "Riesgo heredado"
+      ],
+      "correcta": 1,
+      "explicacion": "TOGAF distingue riesgo inicial (antes de mitigar) y residual (después)."
+    },
+    {
+      "id": "x19",
+      "tema": "tecnicas",
+      "source": "complemento",
+      "fiabilidad": "oficial_indirecto",
+      "enunciado": "En los grados de interoperabilidad, ¿qué es el grado 1?",
+      "opciones": [
+        "Intercambio de datos no estructurado",
+        "Intercambio de datos estructurado",
+        "Compartición fluida de datos",
+        "Compartición fluida de información"
+      ],
+      "correcta": 0,
+      "explicacion": "Los grados van de 1 (no estructurado) a 4 (compartición fluida de información)."
+    },
+    {
+      "id": "x20",
+      "tema": "tecnicas",
+      "source": "complemento",
+      "fiabilidad": "secundario",
+      "enunciado": "¿Qué matriz agrupa brechas, soluciones posibles y dependencias para formar work packages?",
+      "opciones": [
+        "Implementation Factor Assessment and Deduction Matrix",
+        "Business Interaction Matrix",
+        "Consolidated Gaps, Solutions and Dependencies Matrix",
+        "Application/Data Matrix"
+      ],
+      "correcta": 2,
+      "explicacion": "Es una técnica de planificación de migración de las Fases E y F."
+    },
+    {
+      "id": "x21",
+      "tema": "gobernanza",
+      "source": "complemento",
+      "fiabilidad": "oficial_indirecto",
+      "enunciado": "¿Qué nivel de conformidad indica correspondencia total entre especificación e implementación?",
+      "opciones": [
+        "Compliant",
+        "Conformant",
+        "Consistent",
+        "Fully conformant"
+      ],
+      "correcta": 3,
+      "explicacion": "Es el nivel más alto de los seis."
+    },
+    {
+      "id": "x22",
+      "tema": "gobernanza",
+      "source": "complemento",
+      "fiabilidad": "oficial_indirecto",
+      "enunciado": "El acuerdo entre socios de desarrollo y patrocinadores sobre entregables, calidad y adecuación al propósito es el…",
+      "opciones": [
+        "Architecture Contract",
+        "Statement of Architecture Work",
+        "Request for Architecture Work",
+        "Communications Plan"
+      ],
+      "correcta": 0,
+      "explicacion": "Forma parte del Architecture Capability Framework."
+    },
+    {
+      "id": "x23",
+      "tema": "certificacion",
+      "source": "complemento",
+      "fiabilidad": "oficial_leido",
+      "enunciado": "¿Qué formato tiene el examen EA Part 2 (Practitioner)?",
+      "opciones": [
+        "40 preguntas en 60 minutos",
+        "8 preguntas de escenario en 90 minutos",
+        "14 preguntas en 60 minutos",
+        "48 preguntas en 150 minutos"
+      ],
+      "correcta": 1,
+      "explicacion": "Es de libro abierto, con puntuación gradual y aprobación de 24/40 puntos."
+    },
+    {
+      "id": "x24",
+      "tema": "certificacion",
+      "source": "complemento",
+      "fiabilidad": "oficial_leido",
+      "enunciado": "En el examen EA Part 2, ¿cuántos puntos vale la mejor respuesta de cada escenario?",
+      "opciones": [
+        "1",
+        "3",
+        "5",
+        "10"
+      ],
+      "correcta": 2,
+      "explicacion": "Mejor respuesta 5, segunda 3, tercera 1, distractor 0."
+    },
+    {
+      "id": "x25",
+      "tema": "archimate",
+      "source": "complemento",
+      "fiabilidad": "secundario",
+      "enunciado": "¿Qué capa de ArchiMate corresponde a la Fase D del ADM?",
+      "opciones": [
+        "Business Layer",
+        "Application Layer",
+        "Technology Layer",
+        "Motivation"
+      ],
+      "correcta": 2,
+      "explicacion": "B ↔ Business, C ↔ Application, D ↔ Technology."
+    },
+    {
+      "id": "x26",
+      "tema": "tecnicas",
+      "source": "complemento",
+      "fiabilidad": "oficial_indirecto",
+      "enunciado": "En la plantilla de un principio de arquitectura, ¿qué parte expresa los beneficios de negocio?",
+      "opciones": [
+        "Name",
+        "Rationale",
+        "Statement",
+        "Implications"
+      ],
+      "correcta": 1,
+      "explicacion": "Rationale explica el porqué en lenguaje de negocio; Implications, lo que exige cumplirlo."
+    },
+    {
+      "id": "x27",
+      "tema": "tecnicas",
+      "source": "complemento",
+      "fiabilidad": "secundario",
+      "enunciado": "La iteración de tipo «Architecture Development» abarca las fases…",
+      "opciones": [
+        "B a F",
+        "Preliminar y A",
+        "E y F",
+        "G y H"
+      ],
+      "correcta": 0,
+      "explicacion": "Capability: Preliminar–A; Transition Planning: E–F; Governance: G–H."
+    }
+  ]
+}
